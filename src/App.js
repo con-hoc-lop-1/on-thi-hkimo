@@ -9,24 +9,24 @@ function App() {
   const isDebug = params.get("debug") === "1" || params.get("debug") === "true";
 
   const [name, setName] = useState(
-    localStorage.getItem("timo-user-name") || ""
+    localStorage.getItem("hkimo-user-name") || ""
   );
   const [isStarted, setIsStarted] = useState(false);
   const [paperMode, setPaperMode] = useState(isDebug);
   const [history, setHistory] = useState(
-    JSON.parse(localStorage.getItem("timo-history") || "[]")
+    JSON.parse(localStorage.getItem("hkimo-history") || "[]")
   );
   const [showVi, setShowVi] = useState(
-    JSON.parse(localStorage.getItem("timo-show-vi") || "false")
+    JSON.parse(localStorage.getItem("hkimo-show-vi") || "false")
   );
   const [dataType, setDataType] = useState(
-    localStorage.getItem("timo-data-type") || "preliminary"
+    localStorage.getItem("hkimo-data-type") || "preliminary"
   );
   const showHomeVi = dataType === "preliminary";
 
   const handleStart = () => {
     if (!name.trim()) return alert("Vui lòng nhập tên");
-    localStorage.setItem("timo-user-name", name.trim());
+    localStorage.setItem("hkimo-user-name", name.trim());
     setIsStarted(true);
   };
 
@@ -34,7 +34,7 @@ function App() {
     if (result) {
       const newHistory = [result, ...history].slice(0, 10);
       setHistory(newHistory);
-      localStorage.setItem("timo-history", JSON.stringify(newHistory));
+      localStorage.setItem("hkimo-history", JSON.stringify(newHistory));
     }
     if (!isStarted) setIsStarted(false);
   };
@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div className="container py-5" style={{ maxWidth: 700 }}>
-      <h1 className="text-center mb-4">TIMO 1</h1>
+      <h1 className="text-center mb-4">HKIMO 1</h1>
       <div className="mb-3">
         <label className="form-label">
           Round {showHomeVi && <i>(Vòng thi)</i>}:
@@ -63,11 +63,11 @@ function App() {
           onChange={(e) => {
             const val = e.target.value;
             setDataType(val);
-            localStorage.setItem("timo-data-type", val);
+            localStorage.setItem("hkimo-data-type", val);
             if (val === "heat") {
               // Khi chọn HEAT thì ẩn ngôn ngữ và chỉ English
               setShowVi(false);
-              localStorage.setItem("timo-show-vi", JSON.stringify(false));
+              localStorage.setItem("hkimo-show-vi", JSON.stringify(false));
             }
           }}
         >
@@ -115,7 +115,7 @@ function App() {
               onChange={(e) => {
                 setShowVi(e.target.checked);
                 localStorage.setItem(
-                  "timo-show-vi",
+                  "hkimo-show-vi",
                   JSON.stringify(e.target.checked)
                 );
               }}

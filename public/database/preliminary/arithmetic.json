@@ -2,25 +2,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 2 + 4 + 6 + 8 + 10.",
-      "vi": "Tìm giá trị của 2 + 4 + 6 + 8 + 10."
+      "en": "Find the value of 5 + 10 + 15 + 20 + 25.",
+      "vi": "Tìm giá trị của 5 + 10 + 15 + 20 + 25."
     },
     "choices": [
       {
         "id": "A",
-        "en": "10"
+        "en": "65"
       },
       {
         "id": "B",
-        "en": "20"
+        "en": "70"
       },
       {
         "id": "C",
-        "en": "30"
+        "en": "75"
       },
       {
         "id": "D",
-        "en": "40"
+        "en": "80"
       }
     ],
     "answer": {
@@ -32,25 +32,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 10 – 8 + 6 – 4 + 2.",
-      "vi": "Tìm giá trị của 10 – 8 + 6 – 4 + 2."
+      "en": "Find the value of 20 – 15 + 10 – 5 + 1.",
+      "vi": "Tìm giá trị của 20 – 15 + 10 – 5 + 1."
     },
     "choices": [
       {
         "id": "A",
-        "en": "6"
+        "en": "11"
       },
       {
         "id": "B",
-        "en": "4"
+        "en": "10"
       },
       {
         "id": "C",
-        "en": "8"
+        "en": "12"
       },
       {
         "id": "D",
-        "en": "10"
+        "en": "15"
       }
     ],
     "answer": {
@@ -62,43 +62,43 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 9 + 2 + 1 + 8 + 3.",
-      "vi": "Tìm giá trị của 9 + 2 + 1 + 8 + 3."
+      "en": "Find the value of 12 + 8 + 7 + 13 + 5.",
+      "vi": "Tìm giá trị của 12 + 8 + 7 + 13 + 5."
     },
     "choices": [
       {
         "id": "A",
-        "en": "20"
+        "en": "40"
       },
       {
         "id": "B",
-        "en": "22"
+        "en": "45"
       },
       {
         "id": "C",
-        "en": "23"
+        "en": "50"
       },
       {
         "id": "D",
-        "en": "21"
+        "en": "35"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "A03"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "What number should be filled in the blank? 18 - __ = 4",
-      "vi": "Tìm số thích hợp để điền vào chỗ trống. 18 - __ = 4"
+      "en": "What number should be filled in the blank? 25 - __ = 11",
+      "vi": "Tìm số thích hợp để điền vào chỗ trống. 25 - __ = 11"
     },
     "choices": [
       {
         "id": "A",
-        "en": "15"
+        "en": "12"
       },
       {
         "id": "B",
@@ -110,7 +110,7 @@
       },
       {
         "id": "D",
-        "en": "12"
+        "en": "15"
       }
     ],
     "answer": {
@@ -122,18 +122,18 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "What is the value of A + B if the equation below is correct?",
-      "vi": "Tìm giá trị của A + B biết rằng phép tính dưới đây là đúng."
+      "en": "What is the value of X + Y if the equation below is correct?",
+      "vi": "Tìm giá trị của X + Y biết rằng phép tính dưới đây là đúng."
     },
     "figure": {
       "renderer": "columnAddition",
       "params": {
         "terms": [
-          "A",
-          "A",
-          "A"
+          "X",
+          "X",
+          "X"
         ],
-        "result": "BA",
+        "result": "YX",
         "plusIndex": 2,
         "fontSize": 28
       }
@@ -141,15 +141,15 @@
     "choices": [
       {
         "id": "A",
-        "en": "1"
+        "en": "3"
       },
       {
         "id": "B",
-        "en": "4"
+        "en": "5"
       },
       {
         "id": "C",
-        "en": "5"
+        "en": "7"
       },
       {
         "id": "D",
@@ -158,32 +158,32 @@
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "B"
     },
     "id": "A05"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 17 + 14 - 3 + 10 - 12.",
-      "vi": "Tìm giá trị của 17 + 14 - 3 + 10 - 12."
+      "en": "Find the value of 25 + 15 - 5 + 10 - 20.",
+      "vi": "Tìm giá trị của 25 + 15 - 5 + 10 - 20."
     },
     "choices": [
       {
         "id": "A",
-        "en": "26"
+        "en": "25"
       },
       {
         "id": "B",
-        "en": "23"
+        "en": "20"
       },
       {
         "id": "C",
-        "en": "27"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "25"
+        "en": "15"
       }
     ],
     "answer": {
@@ -195,25 +195,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 4 + 9 - 4 + 17 - 13.",
-      "vi": "Tìm giá trị của 4 + 9 - 4 + 17 - 13."
+      "en": "Find the value of 8 + 7 - 8 + 15 - 12.",
+      "vi": "Tìm giá trị của 8 + 7 - 8 + 15 - 12."
     },
     "choices": [
       {
         "id": "A",
-        "en": "13"
-      },
-      {
-        "id": "B",
-        "en": "15"
-      },
-      {
-        "id": "C",
         "en": "10"
       },
       {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
         "id": "D",
-        "en": "11"
+        "en": "15"
       }
     ],
     "answer": {
@@ -225,8 +225,8 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 12 + 20 - 9 + 12 - 20.",
-      "vi": "Tìm giá trị của 12 + 20 - 9 + 12 - 20."
+      "en": "Find the value of 15 + 25 - 10 + 15 - 25.",
+      "vi": "Tìm giá trị của 15 + 25 - 10 + 15 - 25."
     },
     "choices": [
       {
@@ -239,7 +239,7 @@
       },
       {
         "id": "C",
-        "en": "15"
+        "en": "20"
       },
       {
         "id": "D",
@@ -255,47 +255,17 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 7 + 14 - 17 + 8 - 10.",
-      "vi": "Tìm giá trị của 7 + 14 - 17 + 8 - 10."
+      "en": "Find the value of 10 + 20 - 15 + 5 - 10.",
+      "vi": "Tìm giá trị của 10 + 20 - 15 + 5 - 10."
     },
     "choices": [
       {
         "id": "A",
-        "en": "3"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "0"
-      },
-      {
-        "id": "D",
-        "en": "4"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "A09"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "Find the value of 19 + 17 - 11 + 2 - 17.",
-      "vi": "Tìm giá trị của 19 + 17 - 11 + 2 - 17."
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "9"
-      },
-      {
-        "id": "B",
         "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
       },
       {
         "id": "C",
@@ -303,7 +273,37 @@
       },
       {
         "id": "D",
-        "en": "13"
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "A09"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Find the value of 30 + 10 - 20 + 5 - 15.",
+      "vi": "Tìm giá trị của 30 + 10 - 20 + 5 - 15."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "20"
       }
     ],
     "answer": {
@@ -315,38 +315,38 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 2 + 12 - 4 + 16 - 17.",
-      "vi": "Tìm giá trị của 2 + 12 - 4 + 16 - 17."
+      "en": "Find the value of 5 + 15 - 10 + 20 - 25.",
+      "vi": "Tìm giá trị của 5 + 15 - 10 + 20 - 25."
     },
     "choices": [
       {
         "id": "A",
-        "en": "9"
+        "en": "10"
       },
       {
         "id": "B",
-        "en": "8"
+        "en": "5"
       },
       {
         "id": "C",
-        "en": "11"
+        "en": "0"
       },
       {
         "id": "D",
-        "en": "7"
+        "en": "15"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
     "id": "A11"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 9 + 7 - 12 + 15 - 2.",
-      "vi": "Tìm giá trị của 9 + 7 - 12 + 15 - 2."
+      "en": "Find the value of 18 + 12 - 7 + 9 - 15.",
+      "vi": "Tìm giá trị của 18 + 12 - 7 + 9 - 15."
     },
     "choices": [
       {
@@ -375,38 +375,38 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 11 + 19 - 15 + 15 - 15.",
-      "vi": "Tìm giá trị của 11 + 19 - 15 + 15 - 15."
+      "en": "Find the value of 35 - 15 + 22 - 12 + 5.",
+      "vi": "Tìm giá trị của 35 - 15 + 22 - 12 + 5."
     },
     "choices": [
       {
         "id": "A",
-        "en": "12"
+        "en": "35"
       },
       {
         "id": "B",
-        "en": "15"
+        "en": "40"
       },
       {
         "id": "C",
-        "en": "16"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "18"
+        "en": "25"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
     "id": "A13"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 2 + 20 - 2 + 13 - 12.",
-      "vi": "Tìm giá trị của 2 + 20 - 2 + 13 - 12."
+      "en": "Find the value of 40 - 25 + 10 - 5 + 3.",
+      "vi": "Tìm giá trị của 40 - 25 + 10 - 5 + 3."
     },
     "choices": [
       {
@@ -415,15 +415,15 @@
       },
       {
         "id": "B",
-        "en": "19"
+        "en": "25"
       },
       {
         "id": "C",
-        "en": "21"
+        "en": "23"
       },
       {
         "id": "D",
-        "en": "23"
+        "en": "18"
       }
     ],
     "answer": {
@@ -495,55 +495,55 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 5 + 3 - 7 + 15 - 13.",
-      "vi": "Tìm giá trị của 5 + 3 - 7 + 15 - 13."
+      "en": "Find the value of 32 + 18 - 25 + 10 - 5.",
+      "vi": "Tìm giá trị của 32 + 18 - 25 + 10 - 5."
     },
     "choices": [
       {
         "id": "A",
-        "en": "3"
+        "en": "35"
       },
       {
         "id": "B",
-        "en": "0"
+        "en": "30"
       },
       {
         "id": "C",
-        "en": "2"
+        "en": "25"
       },
       {
         "id": "D",
-        "en": "6"
+        "en": "40"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
     "id": "A17"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 3 + 7 - 5 + 19 - 8.",
-      "vi": "Tìm giá trị của 3 + 7 - 5 + 19 - 8."
+      "en": "Find the value of 50 - 25 - 15 + 30 + 10.",
+      "vi": "Tìm giá trị của 50 - 25 - 15 + 30 + 10."
     },
     "choices": [
       {
         "id": "A",
-        "en": "15"
+        "en": "55"
       },
       {
         "id": "B",
-        "en": "17"
+        "en": "45"
       },
       {
         "id": "C",
-        "en": "16"
+        "en": "50"
       },
       {
         "id": "D",
-        "en": "13"
+        "en": "60"
       }
     ],
     "answer": {
@@ -555,25 +555,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 17 + 7 - 13 + 20 - 19.",
-      "vi": "Tìm giá trị của 17 + 7 - 13 + 20 - 19."
+      "en": "Find the value of 14 + 16 - 20 + 35 - 15.",
+      "vi": "Tìm giá trị của 14 + 16 - 20 + 35 - 15."
     },
     "choices": [
       {
         "id": "A",
-        "en": "11"
+        "en": "25"
       },
       {
         "id": "B",
-        "en": "12"
+        "en": "30"
       },
       {
         "id": "C",
-        "en": "10"
+        "en": "35"
       },
       {
         "id": "D",
-        "en": "15"
+        "en": "20"
       }
     ],
     "answer": {
@@ -585,25 +585,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Find the value of 16 + 16 - 12 + 20 - 18.",
-      "vi": "Tìm giá trị của 16 + 16 - 12 + 20 - 18."
+      "en": "Find the value of 100 - 50 - 20 - 10 - 5.",
+      "vi": "Tìm giá trị của 100 - 50 - 20 - 10 - 5."
     },
     "choices": [
       {
         "id": "A",
-        "en": "20"
+        "en": "10"
       },
       {
         "id": "B",
-        "en": "22"
+        "en": "15"
       },
       {
         "id": "C",
-        "en": "23"
+        "en": "20"
       },
       {
         "id": "D",
-        "en": "24"
+        "en": "25"
       }
     ],
     "answer": {
@@ -615,85 +615,85 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 5, 10, 15, 20, 25, ... What is the next number?",
-      "vi": "Dãy số là 5, 10, 15, 20, 25, ... Số tiếp theo là gì?"
+      "en": "The sequence is 2, 4, 6, 8, 10, ... What is the 10th number?",
+      "vi": "Dãy số là 2, 4, 6, 8, 10, ... Số thứ 10 là gì?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "33"
+        "en": "18"
       },
       {
         "id": "B",
-        "en": "37"
-      },
-      {
-        "id": "C",
-        "en": "30"
-      },
-      {
-        "id": "D",
-        "en": "27"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "A21"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "The sequence is 4, 7, 10, 13, 16, ... What is the next number?",
-      "vi": "Dãy số là 4, 7, 10, 13, 16, ... Số tiếp theo là gì?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "25"
-      },
-      {
-        "id": "B",
-        "en": "19"
-      },
-      {
-        "id": "C",
-        "en": "21"
-      },
-      {
-        "id": "D",
         "en": "20"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "24"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
+    "id": "A21"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "The sequence is 1, 3, 5, 7, 9, ... What is the 8th number?",
+      "vi": "Dãy số là 1, 3, 5, 7, 9, ... Số thứ 8 là gì?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "A22"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 3, 5, 7, 9, 11, ... What is the next number?",
-      "vi": "Dãy số là 3, 5, 7, 9, 11, ... Số tiếp theo là gì?"
+      "en": "The sequence is 5, 10, 15, 20, 25, ... What is the 7th number?",
+      "vi": "Dãy số là 5, 10, 15, 20, 25, ... Số thứ 7 là gì?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "11"
+        "en": "30"
       },
       {
         "id": "B",
-        "en": "13"
+        "en": "35"
       },
       {
         "id": "C",
-        "en": "19"
+        "en": "40"
       },
       {
         "id": "D",
-        "en": "17"
+        "en": "45"
       }
     ],
     "answer": {
@@ -705,43 +705,13 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 1, 6, 11, 16, 21, ... What is the next number?",
-      "vi": "Dãy số là 1, 6, 11, 16, 21, ... Số tiếp theo là gì?"
+      "en": "Find the missing number: 2, 5, 8, 11, __, 17.",
+      "vi": "Tìm số còn thiếu: 2, 5, 8, 11, __, 17."
     },
     "choices": [
       {
         "id": "A",
-        "en": "31"
-      },
-      {
-        "id": "B",
-        "en": "22"
-      },
-      {
-        "id": "C",
-        "en": "26"
-      },
-      {
-        "id": "D",
-        "en": "29"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "A24"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "The sequence is 4, 6, 8, 10, 12, ... What is the next number?",
-      "vi": "Dãy số là 4, 6, 8, 10, 12, ... Số tiếp theo là gì?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "16"
+        "en": "13"
       },
       {
         "id": "B",
@@ -749,7 +719,7 @@
       },
       {
         "id": "C",
-        "en": "17"
+        "en": "15"
       },
       {
         "id": "D",
@@ -760,52 +730,52 @@
       "type": "single",
       "key": "B"
     },
+    "id": "A24"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Find the missing number: 30, 25, 20, __, 10, 5.",
+      "vi": "Tìm số còn thiếu: 30, 25, 20, __, 10, 5."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "A25"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 1, 3, 5, 7, 9, ... What is the next number?",
-      "vi": "Dãy số là 1, 3, 5, 7, 9, ... Số tiếp theo là gì?"
+      "en": "What is the sum of the first five even numbers starting from 2?",
+      "vi": "Tổng của 5 số chẵn đầu tiên bắt đầu từ 2 là bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "14"
+        "en": "20"
       },
       {
         "id": "B",
-        "en": "13"
-      },
-      {
-        "id": "C",
-        "en": "17"
-      },
-      {
-        "id": "D",
-        "en": "11"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "A26"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "The sequence is 5, 10, 15, 20, 25, ... What is the next number?",
-      "vi": "Dãy số là 5, 10, 15, 20, 25, ... Số tiếp theo là gì?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "39"
-      },
-      {
-        "id": "B",
-        "en": "29"
+        "en": "25"
       },
       {
         "id": "C",
@@ -813,37 +783,67 @@
       },
       {
         "id": "D",
-        "en": "27"
+        "en": "35"
       }
     ],
     "answer": {
       "type": "single",
       "key": "C"
     },
+    "id": "A26"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "What is the sum of the first five odd numbers starting from 1?",
+      "vi": "Tổng của 5 số lẻ đầu tiên bắt đầu từ 1 là bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "30"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "A27"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 1, 3, 5, 7, 9, ... What is the next number?",
-      "vi": "Dãy số là 1, 3, 5, 7, 9, ... Số tiếp theo là gì?"
+      "en": "Find the value of 10 + 11 + 12 + 13 + 14.",
+      "vi": "Tìm giá trị của 10 + 11 + 12 + 13 + 14."
     },
     "choices": [
       {
         "id": "A",
-        "en": "10"
+        "en": "50"
       },
       {
         "id": "B",
-        "en": "11"
+        "en": "60"
       },
       {
         "id": "C",
-        "en": "12"
+        "en": "55"
       },
       {
         "id": "D",
-        "en": "16"
+        "en": "65"
       }
     ],
     "answer": {
@@ -855,21 +855,21 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 3, 8, 13, 18, 23, ... What is the next number?",
-      "vi": "Dãy số là 3, 8, 13, 18, 23, ... Số tiếp theo là gì?"
+      "en": "Find the value of 2 + 4 + 6 + 8 + 10 + 12.",
+      "vi": "Tìm giá trị của 2 + 4 + 6 + 8 + 10 + 12."
     },
     "choices": [
       {
         "id": "A",
-        "en": "32"
+        "en": "40"
       },
       {
         "id": "B",
-        "en": "41"
+        "en": "36"
       },
       {
         "id": "C",
-        "en": "28"
+        "en": "42"
       },
       {
         "id": "D",
@@ -885,25 +885,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "The sequence is 3, 6, 9, 12, 15, ... What is the next number?",
-      "vi": "Dãy số là 3, 6, 9, 12, 15, ... Số tiếp theo là gì?"
+      "en": "Find the value of 1 + 3 + 5 + 7 + 9 + 11.",
+      "vi": "Tìm giá trị của 1 + 3 + 5 + 7 + 9 + 11."
     },
     "choices": [
       {
         "id": "A",
-        "en": "18"
+        "en": "36"
       },
       {
         "id": "B",
-        "en": "25"
+        "en": "30"
       },
       {
         "id": "C",
-        "en": "17"
+        "en": "35"
       },
       {
         "id": "D",
-        "en": "21"
+        "en": "40"
       }
     ],
     "answer": {
@@ -915,25 +915,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 7, and A + B = 8, what is B?",
-      "vi": "Nếu A = 7, và A + B = 8, thì B bằng bao nhiêu?"
+      "en": "If 15 + A = 40, then A = ?",
+      "vi": "Nếu 15 + A = 40, thì A = ?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "5"
+        "en": "20"
       },
       {
         "id": "B",
-        "en": "1"
+        "en": "25"
       },
       {
         "id": "C",
-        "en": "3"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "2"
+        "en": "35"
       }
     ],
     "answer": {
@@ -945,25 +945,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 7, and A + B = 10, what is B?",
-      "vi": "Nếu A = 7, và A + B = 10, thì B bằng bao nhiêu?"
+      "en": "If A - 12 = 18, then A = ?",
+      "vi": "Nếu A - 12 = 18, thì A = ?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "3"
+        "en": "30"
       },
       {
         "id": "B",
-        "en": "2"
+        "en": "25"
       },
       {
         "id": "C",
-        "en": "0"
+        "en": "35"
       },
       {
         "id": "D",
-        "en": "4"
+        "en": "20"
       }
     ],
     "answer": {
@@ -975,235 +975,235 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 6, and A + B = 7, what is B?",
-      "vi": "Nếu A = 6, và A + B = 7, thì B bằng bao nhiêu?"
+      "en": "If 50 - A = 22, then A = ?",
+      "vi": "Nếu 50 - A = 22, thì A = ?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "2"
+        "en": "28"
       },
       {
         "id": "B",
-        "en": "2"
+        "en": "30"
       },
       {
         "id": "C",
-        "en": "5"
+        "en": "25"
       },
       {
         "id": "D",
-        "en": "1"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "A33"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "If A = 4, and A + B = 9, what is B?",
-      "vi": "Nếu A = 4, và A + B = 9, thì B bằng bao nhiêu?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "3"
-      },
-      {
-        "id": "B",
-        "en": "7"
-      },
-      {
-        "id": "C",
-        "en": "5"
-      },
-      {
-        "id": "D",
-        "en": "2"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "A34"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "If A = 3, and A + B = 6, what is B?",
-      "vi": "Nếu A = 3, và A + B = 6, thì B bằng bao nhiêu?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "3"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "0"
-      },
-      {
-        "id": "D",
-        "en": "1"
+        "en": "32"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
-    "id": "A35"
+    "id": "A33"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 7, and A + B = 9, what is B?",
-      "vi": "Nếu A = 7, và A + B = 9, thì B bằng bao nhiêu?"
+      "en": "Find the missing number: 100, 90, 80, __, 60.",
+      "vi": "Tìm số còn thiếu: 100, 90, 80, __, 60."
     },
     "choices": [
       {
         "id": "A",
-        "en": "1"
+        "en": "75"
       },
       {
         "id": "B",
-        "en": "2"
+        "en": "70"
       },
       {
         "id": "C",
-        "en": "5"
+        "en": "65"
       },
       {
         "id": "D",
-        "en": "0"
+        "en": "85"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
+    "id": "A34"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Find the value of 15 + 15 + 15 + 15.",
+      "vi": "Tìm giá trị của 15 + 15 + 15 + 15."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "55"
+      },
+      {
+        "id": "B",
+        "en": "60"
+      },
+      {
+        "id": "C",
+        "en": "45"
+      },
+      {
+        "id": "D",
+        "en": "50"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "A35"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Find the value of 25 + 25 + 25.",
+      "vi": "Tìm giá trị của 25 + 25 + 25."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "75"
+      },
+      {
+        "id": "B",
+        "en": "50"
+      },
+      {
+        "id": "C",
+        "en": "100"
+      },
+      {
+        "id": "D",
+        "en": "60"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "A36"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 7, and A + B = 12, what is B?",
-      "vi": "Nếu A = 7, và A + B = 12, thì B bằng bao nhiêu?"
+      "en": "Find the value of 12 + 13 + 14 + 15.",
+      "vi": "Tìm giá trị của 12 + 13 + 14 + 15."
     },
     "choices": [
       {
         "id": "A",
-        "en": "4"
+        "en": "50"
       },
       {
         "id": "B",
-        "en": "6"
+        "en": "55"
       },
       {
         "id": "C",
-        "en": "2"
+        "en": "54"
       },
       {
         "id": "D",
-        "en": "5"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "A37"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "If A = 8, and A + B = 9, what is B?",
-      "vi": "Nếu A = 8, và A + B = 9, thì B bằng bao nhiêu?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "0"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "1"
-      },
-      {
-        "id": "D",
-        "en": "3"
+        "en": "60"
       }
     ],
     "answer": {
       "type": "single",
       "key": "C"
     },
+    "id": "A37"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "What number is 15 more than 35?",
+      "vi": "Số nào lớn hơn 35 là 15 đơn vị?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "50"
+      },
+      {
+        "id": "B",
+        "en": "45"
+      },
+      {
+        "id": "C",
+        "en": "55"
+      },
+      {
+        "id": "D",
+        "en": "40"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "A38"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 8, and A + B = 13, what is B?",
-      "vi": "Nếu A = 8, và A + B = 13, thì B bằng bao nhiêu?"
+      "en": "What number is 20 less than 60?",
+      "vi": "Số nào nhỏ hơn 60 là 20 đơn vị?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "4"
+        "en": "30"
       },
       {
         "id": "B",
-        "en": "8"
+        "en": "45"
       },
       {
         "id": "C",
-        "en": "3"
+        "en": "40"
       },
       {
         "id": "D",
-        "en": "5"
+        "en": "35"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "C"
     },
     "id": "A39"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "If A = 8, and A + B = 12, what is B?",
-      "vi": "Nếu A = 8, và A + B = 12, thì B bằng bao nhiêu?"
+      "en": "Find the value of (12 + 8) - (15 - 5).",
+      "vi": "Tìm giá trị của (12 + 8) - (15 - 5)."
     },
     "choices": [
       {
         "id": "A",
-        "en": "4"
+        "en": "10"
       },
       {
         "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
         "en": "5"
       },
       {
+        "id": "C",
+        "en": "15"
+      },
+      {
         "id": "D",
-        "en": "7"
+        "en": "20"
       }
     ],
     "answer": {
@@ -1215,25 +1215,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 12 = 30, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 12 = 30, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 15 = 45, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 15 = 45, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "17"
+        "en": "25"
       },
       {
         "id": "B",
-        "en": "19"
+        "en": "35"
       },
       {
         "id": "C",
-        "en": "18"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "16"
+        "en": "20"
       }
     ],
     "answer": {
@@ -1245,17 +1245,17 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 9 = 37, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 9 = 37, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 22 = 50, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 22 = 50, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "27"
+        "en": "26"
       },
       {
         "id": "B",
-        "en": "26"
+        "en": "30"
       },
       {
         "id": "C",
@@ -1275,25 +1275,25 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 5 = 30, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 5 = 30, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 13 = 40, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 13 = 40, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "25"
-      },
-      {
-        "id": "B",
-        "en": "22"
-      },
-      {
-        "id": "C",
         "en": "27"
       },
       {
+        "id": "B",
+        "en": "30"
+      },
+      {
+        "id": "C",
+        "en": "25"
+      },
+      {
         "id": "D",
-        "en": "26"
+        "en": "33"
       }
     ],
     "answer": {
@@ -1305,38 +1305,8 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 6 = 16, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 6 = 16, thì A bằng bao nhiêu?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "8"
-      },
-      {
-        "id": "B",
-        "en": "12"
-      },
-      {
-        "id": "C",
-        "en": "10"
-      },
-      {
-        "id": "D",
-        "en": "11"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "A44"
-  },
-  {
-    "type": "Arithmetic",
-    "stem": {
-      "en": "In the column addition, if A + 5 = 22, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 5 = 22, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 25 = 50, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 25 = 50, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
@@ -1345,11 +1315,11 @@
       },
       {
         "id": "B",
-        "en": "17"
+        "en": "25"
       },
       {
         "id": "C",
-        "en": "19"
+        "en": "30"
       },
       {
         "id": "D",
@@ -1360,82 +1330,112 @@
       "type": "single",
       "key": "B"
     },
+    "id": "A44"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "In the column addition, if A + 8 = 30, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 8 = 30, thì A bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "18"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "A45"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 7 = 37, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 7 = 37, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 17 = 40, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 17 = 40, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "28"
+        "en": "20"
       },
       {
         "id": "B",
-        "en": "31"
+        "en": "25"
       },
       {
         "id": "C",
-        "en": "33"
+        "en": "23"
       },
       {
         "id": "D",
-        "en": "30"
+        "en": "27"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "C"
     },
     "id": "A46"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 15 = 45, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 15 = 45, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 25 = 60, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 25 = 60, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "33"
+        "en": "35"
       },
       {
         "id": "B",
-        "en": "30"
+        "en": "40"
       },
       {
         "id": "C",
-        "en": "29"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "28"
+        "en": "45"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
     "id": "A47"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 11 = 37, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 11 = 37, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 12 = 40, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 12 = 40, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "26"
+        "en": "28"
       },
       {
         "id": "B",
-        "en": "23"
+        "en": "30"
       },
       {
         "id": "C",
@@ -1443,7 +1443,7 @@
       },
       {
         "id": "D",
-        "en": "28"
+        "en": "32"
       }
     ],
     "answer": {
@@ -1455,55 +1455,55 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 15 = 48, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 15 = 48, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 20 = 55, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 20 = 55, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "35"
-      },
-      {
-        "id": "B",
-        "en": "32"
-      },
-      {
-        "id": "C",
         "en": "30"
       },
       {
+        "id": "B",
+        "en": "35"
+      },
+      {
+        "id": "C",
+        "en": "40"
+      },
+      {
         "id": "D",
-        "en": "33"
+        "en": "25"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "B"
     },
     "id": "A49"
   },
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "In the column addition, if A + 15 = 26, what is A?",
-      "vi": "Trong phép cộng cột, nếu A + 15 = 26, thì A bằng bao nhiêu?"
+      "en": "In the column addition, if A + 18 = 30, what is A?",
+      "vi": "Trong phép cộng cột, nếu A + 18 = 30, thì A bằng bao nhiêu?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "11"
+        "en": "12"
       },
       {
         "id": "B",
-        "en": "13"
+        "en": "15"
       },
       {
         "id": "C",
-        "en": "9"
+        "en": "10"
       },
       {
         "id": "D",
-        "en": "8"
+        "en": "14"
       }
     ],
     "answer": {

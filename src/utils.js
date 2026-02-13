@@ -18,23 +18,32 @@ export function loadAllQuestions(
   dataType = "preliminary"
 ) {
   // In debug mode on localhost, read via local API to avoid CRA full-page reloads
-  const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
-  const isDebug = params && (params.get('debug') === '1' || params.get('debug') === 'true');
-  const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+  const params =
+    typeof window !== "undefined"
+      ? new URLSearchParams(window.location.search)
+      : null;
+  const isDebug =
+    params && (params.get("debug") === "1" || params.get("debug") === "true");
+  const isLocalhost =
+    typeof window !== "undefined" &&
+    (window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1");
   const useApi = isDebug && isLocalhost;
   const basePath = useApi
     ? `http://localhost:4500/api/database/${dataType}`
-    : `/on-thi-timo/database/${dataType}`;
+    : `/on-thi-hkimo/database/${dataType}`;
 
   const data = tests.map((test) => {
     const url = `${basePath}/${test}.json` + (useApi ? `?v=${Date.now()}` : "");
-    return fetch(url, useApi ? { cache: 'no-store' } : undefined).then((res) => res.json());
+    return fetch(url, useApi ? { cache: "no-store" } : undefined).then((res) =>
+      res.json()
+    );
   });
 
   return Promise.all(data).then((results) => {
     // Đọc lịch sử id đã dùng trong 10 lần gần nhất
     const history = JSON.parse(
-      localStorage.getItem("timo-question-history") || "[]"
+      localStorage.getItem("hkimo-question-history") || "[]"
     );
     const excludeIds = history.flat(); // gộp hết id các lần trước
 
@@ -55,7 +64,7 @@ export function loadAllQuestions(
 
     // Lưu id của lần này vào history
     const newHistory = [selected.map((q) => q.id), ...history].slice(0, 10);
-    localStorage.setItem("timo-question-history", JSON.stringify(newHistory));
+    localStorage.setItem("hkimo-question-history", JSON.stringify(newHistory));
 
     // Trả về danh sách câu hỏi
     // - Nếu random: xáo trộn toàn bộ

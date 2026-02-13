@@ -8,7 +8,7 @@ const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 4500;
-const AUTH_TOKEN = process.env.SAVE_TOKEN || "timo-local-dev";
+const AUTH_TOKEN = process.env.SAVE_TOKEN || "hkimo-local-dev";
 
 app.use(cors({ origin: [/^http:\/\/localhost:\d+$/] }));
 app.use(express.json({ limit: "5mb" }));

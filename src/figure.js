@@ -171,6 +171,48 @@ function GroupRepeats({ symbol, groups }) {
     </div>
   );
 }
+function GroupRepeatsGrid({ symbol, groups }) {
+  return (
+    <div className="d-flex gap-3">
+      {groups.map((group, idx) => (
+        <div
+          key={idx}
+          className="border rounded p-2 bg-white d-flex flex-column align-items-center"
+        >
+          <div className="text-muted mb-1">#{idx + 1}</div>
+
+          {/* Case: dấu ? */}
+          {group === "?" ? (
+            <div
+              className="border rounded d-flex align-items-center justify-content-center"
+              style={{ width: 48, height: 48 }}
+            >
+              ?
+            </div>
+          ) : (
+            <div
+              className="d-grid"
+              style={{
+                gridTemplateColumns: `repeat(${group.length}, 1fr)`,
+                gap: 6,
+              }}
+            >
+              {group.flat().map((cell, i) => (
+                <div
+                  key={i}
+                  className="border rounded d-flex align-items-center justify-content-center"
+                  style={{ width: 40, height: 40 }}
+                >
+                  {cell ? <SvgIcon kind={symbol} size={24} /> : null}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 // Q11: hai “thùng” để so sánh/move cho bằng
 function GridSquareTables({ data = [[]] }) {
@@ -772,6 +814,7 @@ function SvgFigure({ svg }) {
 const FIGURES = {
   symbolPattern: (p) => <SymbolPattern {...p} />,
   groupRepeats: (p) => <GroupRepeats {...p} />,
+  GroupRepeatsGrid: (p) => <GroupRepeatsGrid {...p} />,
   twoBins: (p) => <TwoBins {...p} />,
   gridSquareTables: (p) => <GridSquareTables {...p} />,
   isoCubes: (p) => <IsoCubes {...p} />,

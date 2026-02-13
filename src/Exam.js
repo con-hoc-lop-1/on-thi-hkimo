@@ -14,7 +14,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
   const [startTime] = useState(Date.now());
   const [startDate] = useState(new Date().toLocaleString());
   const showVi = (function () {
-    const saved = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
+    const saved = JSON.parse(localStorage.getItem("hkimo-show-vi") || "false");
     return dataType === "preliminary" ? saved : false;
   })();
 
@@ -45,7 +45,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
   }, [dataType]);
 
   useEffect(() => {
-    document.title = `${name} - TIMO ${dataType.toUpperCase()} (${startDate})`;
+    document.title = `${name} - HKIMO ${dataType.toUpperCase()} (${startDate})`;
   }, [startDate]);
 
   const handleAnswer = (val) => {
@@ -89,7 +89,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
     return (
       <div className="container-fluid mt-4 paper-mode">
         <h3 className="m-3">
-          {name} - TIMO {dataType.toUpperCase()} ({startDate})
+          {name} - HKIMO {dataType.toUpperCase()} ({startDate})
         </h3>
         {questions.map((q, qi) => (
           <div
@@ -138,7 +138,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
           <div className="blank-page">
             <div className="info-box">
               <h4 className="mb-3">
-                {name} - TIMO TEST ({startDate})
+                {name} - HKIMO TEST ({startDate})
               </h4>
               <table className="table table-bordered">
                 <tbody>
@@ -183,7 +183,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
             Answer <i>(Đáp án)</i>
           </h3>
           <h6>
-            {name} - TIMO TEST ({startDate})
+            {name} - HKIMO TEST ({startDate})
           </h6>
           <div className="answer-grid">
             {questions.map((q, qi) => (

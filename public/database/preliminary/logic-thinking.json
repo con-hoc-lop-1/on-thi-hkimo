@@ -627,6 +627,48 @@
       "key": "D"
     },
     "id": "L17"
+  },{
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "From the pattern below, how many symbols ⊕ are there in the 5th group?",
+      "vi": "Dựa theo quy luật, hỏi có bao nhiêu kí hiệu ⊕ trong nhóm thứ 5?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "⊕",
+        "groups": [
+          1,
+          2,
+          3,
+          4,
+          "?"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "L171"
   },
   {
     "type": "Logic Thinking",
@@ -1456,19 +1498,23 @@
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "en": "Apple",
+        "vi": "Táo"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "en": "Orange",
+        "vi": "Cam"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "en": "Mango",
+        "vi": "Xoài"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "en": "None of them",
+        "vi": "Không có"
       }
     ],
     "answer": {

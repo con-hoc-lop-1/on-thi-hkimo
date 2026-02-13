@@ -4,17 +4,19 @@ import { renderFigure } from "./figure";
 
 function Edit({ dataType = "preliminary" }) {
   const listQuestionFiles = [
-    "arithmetic",
+    // "arithmetic",
     "combinatorics",
-    "geometry",
-    "logic-thinking",
-    "number-theory",
+    // "geometry",
+    // "logic-thinking",
+    // "number-theory",
   ];
 
   const [questions, setQuestions] = useState([]);
   const [copied, setCopied] = useState(0);
   const [saved, setSaved] = useState([]);
   const [tmpStem, setTmpStem] = useState(false);
+  const [tmpEnStem, setTmpEnStem] = useState(false);
+  const [tmpViStem, setTmpViStem] = useState(false);
   const [tmpFull, setTmpFull] = useState(false);
 
   const removeSaved = (id) => {
@@ -47,6 +49,20 @@ function Edit({ dataType = "preliminary" }) {
         next[qIndex] = { ...q, stem: newStem };
       }
       setTmpStem(false);
+      removeSaved(next[qIndex]?.id);
+      return next;
+    });
+  };
+  const handleStemLanguageChange = (language, qIndex, newStem) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      try {
+        next[qIndex].stem[language] = JSON.parse(newStem);
+      } catch (e) {
+        next[qIndex].stem[language] = newStem;
+      }
+      if (language === "en") setTmpEnStem(false);
+      if (language === "vi") setTmpViStem(false);
       removeSaved(next[qIndex]?.id);
       return next;
     });
@@ -175,6 +191,125 @@ function Edit({ dataType = "preliminary" }) {
     }
   };
 
+  // DELETE: xóa câu hỏi khỏi tệp JSON
+  const deleteQuestion = async (q) => {
+    if (!window.confirm(`Bạn có chắc chắn muốn xóa câu hỏi ID: ${q.id}?`)) {
+      return;
+    }
+    try {
+      // Xác định file theo loại câu hỏi
+      const typeToFile = {
+        Arithmetic: "arithmetic.json",
+        Combinatorics: "combinatorics.json",
+        Geometry: "geometry.json",
+        "Logic Thinking": "logic-thinking.json",
+        "Logic-Thinking": "logic-thinking.json",
+        Logic: "logic-thinking.json",
+        "Number Theory": "number-theory.json",
+        "Number-Theory": "number-theory.json",
+      };
+      const fileName =
+        typeToFile[q.type] ||
+        `${String(q.type || "")
+          .toLowerCase()
+          .replace(/\s+/g, "-")}.json`;
+
+      const params =
+        typeof window !== "undefined"
+          ? new URLSearchParams(window.location.search)
+          : null;
+      const isDebug =
+        params &&
+        (params.get("debug") === "1" || params.get("debug") === "true");
+      const isLocalhost =
+        typeof window !== "undefined" &&
+        (window.location.hostname === "localhost" ||
+          window.location.hostname === "127.0.0.1");
+      const useApi = isDebug && isLocalhost;
+      const basePath = useApi
+        ? `http://localhost:4500/api/database/${dataType}`
+        : `/on-thi-hkimo/database/${dataType}`;
+      const res = await fetch(
+        `${basePath}/${fileName}` + (useApi ? `?v=${Date.now()}` : ""),
+        useApi ? { cache: "no-store" } : undefined
+      );
+      if (!res.ok) throw new Error(`Không thể tải ${fileName}`);
+      const arr = await res.json();
+      if (!Array.isArray(arr))
+        throw new Error("Định dạng tệp không hợp lệ (không phải mảng)");
+
+      // Lọc bỏ câu hỏi
+      const updated = arr.filter((item) => item && item.id !== q.id);
+
+      const text = JSON.stringify(updated, null, 2);
+
+      // Ghi lại tệp
+      try {
+        if (isDebug && isLocalhost) {
+          const resp = await fetch(
+            `http://localhost:4500/api/save/${dataType}/${fileName}`,
+            {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+                "X-Auth-Token": "hkimo-local-dev",
+              },
+              body: text,
+            }
+          );
+          if (resp.ok) {
+            // Refetch
+            const all = await loadAllQuestions(
+              listQuestionFiles,
+              5000,
+              false,
+              dataType
+            );
+            setQuestions(all);
+            return;
+          }
+        }
+      } catch (e) {
+        console.warn("Local save API không khả dụng", e);
+      }
+
+      if (window.showSaveFilePicker) {
+        const handle = await window.showSaveFilePicker({
+          suggestedName: fileName,
+          types: [
+            {
+              description: "JSON File",
+              accept: { "application/json": [".json"] },
+            },
+          ],
+        });
+        const writable = await handle.createWritable();
+        await writable.write(text);
+        await writable.close();
+        // Refetch
+        const all = await loadAllQuestions(
+          listQuestionFiles,
+          5000,
+          false,
+          dataType
+        );
+        setQuestions(all);
+        alert("Đã cập nhật tệp sau khi xóa.");
+      } else {
+        const blob = new Blob([text], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        alert("Trình duyệt không hỗ trợ ghi đè, tệp mới đã được tải xuống.");
+      }
+    } catch (e) {
+      console.error(e);
+      alert("Lỗi khi xóa câu hỏi: " + e.message);
+    }
+  };
+
   // SAVE: ghi đè tệp JSON
   // Ưu tiên gọi API cục bộ khi debug+localhost để ghi trực tiếp không cần hộp thoại.
   // Fallback: File System Access API hoặc tải xuống.
@@ -213,7 +348,7 @@ function Edit({ dataType = "preliminary" }) {
       const useApi = isDebug && isLocalhost;
       const basePath = useApi
         ? `http://localhost:4500/api/database/${dataType}`
-        : `/on-thi-timo/database/${dataType}`;
+        : `/on-thi-hkimo/database/${dataType}`;
       const res = await fetch(
         `${basePath}/${fileName}` + (useApi ? `?v=${Date.now()}` : ""),
         useApi ? { cache: "no-store" } : undefined
@@ -255,7 +390,7 @@ function Edit({ dataType = "preliminary" }) {
               method: "PUT",
               headers: {
                 "Content-Type": "application/json",
-                "X-Auth-Token": "timo-local-dev",
+                "X-Auth-Token": "hkimo-local-dev",
               },
               body: text,
             }
@@ -376,16 +511,55 @@ function Edit({ dataType = "preliminary" }) {
               <div className="col-9">
                 <div className="question-edit-mode">
                   <div className="question-item mb-2">
-                    <label className="form-label">Stem</label>
                     <div className="row">
                       <div className="col-8">
-                        <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
-                        <div dangerouslySetInnerHTML={{ __html: q.stem.vi }} />
+                        <div className="row">
+                          <div className="col-12">
+                            <label className="form-label">Stem EN</label>
+                            <textarea
+                              className="form-control"
+                              rows={2}
+                              onFocus={(e) => e.target.select()}
+                              onBlur={(e) =>
+                                handleStemLanguageChange(
+                                  "en",
+                                  qi,
+                                  e.target.value
+                                )
+                              }
+                              value={tmpEnStem ? tmpEnStem : q.stem.en}
+                              onChange={(e) => {
+                                setTmpEnStem(e.target.value);
+                              }}
+                            />{" "}
+                          </div>
+                        </div>
+                        <div className="row mt-3">
+                          <div className="col-12">
+                            <label className="form-label">Stem VI</label>
+                            <textarea
+                              className="form-control"
+                              rows={2}
+                              onFocus={(e) => e.target.select()}
+                              onBlur={(e) =>
+                                handleStemLanguageChange(
+                                  "vi",
+                                  qi,
+                                  e.target.value
+                                )
+                              }
+                              value={tmpViStem ? tmpViStem : q.stem.vi}
+                              onChange={(e) => {
+                                setTmpViStem(e.target.value);
+                              }}
+                            />{" "}
+                          </div>
+                        </div>
                       </div>
                       <div className="col-4">
                         <textarea
                           className="form-control"
-                          rows={5}
+                          rows={8}
                           onFocus={(e) => e.target.select()}
                           onBlur={(e) => handleStemChange(qi, e.target.value)}
                           value={tmpStem ? tmpStem : JSON.stringify(q.stem)}
@@ -493,7 +667,7 @@ function Edit({ dataType = "preliminary" }) {
                       <div className="col-4">
                         <textarea
                           className="form-control"
-                          rows={3}
+                          rows={2}
                           onFocus={(e) => e.target.select()}
                           value={tmpAnswer ? tmpAnswer : q.answer.key}
                           onChange={(e) => {
@@ -520,7 +694,7 @@ function Edit({ dataType = "preliminary" }) {
                   </label>
                   <textarea
                     className="form-control"
-                    rows={32}
+                    rows={31}
                     onFocus={(e) => e.target.select()}
                     onBlur={(e) => handleFullChange(qi, e.target.value)}
                     value={tmpFull ? tmpFull : JSON.stringify(q)}
@@ -532,14 +706,23 @@ function Edit({ dataType = "preliminary" }) {
               </div>
             </div>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 d-flex">
             <button
               type="button"
-              className={`btn btn-block ${saved.includes(q.id) ? "btn-warning" : "btn-outline-success"}`}
+              className={`btn ${saved.includes(q.id) ? "btn-warning" : "btn-outline-success"} me-2`}
               onClick={() => saveQuestion(q)}
               title="SAVE JSON câu hỏi"
+              style={{ flex: 1 }}
             >
               {saved.includes(q.id) ? "SAVED" : "SAVE"}
+            </button>
+            <button
+              type="button"
+              className="btn btn-outline-danger"
+              onClick={() => deleteQuestion(q)}
+              title="DELETE câu hỏi"
+            >
+              Delete
             </button>
           </div>
         </div>
