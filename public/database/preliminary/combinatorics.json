@@ -27,28 +27,13 @@
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "2"
-      },
-      {
-        "id": "B",
-        "en": "3"
-      },
-      {
-        "id": "C",
-        "en": "4"
-      },
-      {
-        "id": "D",
-        "en": "6"
-      }
+      { "id": "A", "en": "2" },
+      { "id": "B", "en": "3" },
+      { "id": "C", "en": "4" },
+      { "id": "D", "en": "6" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C51"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C01"
   },
   {
     "type": "Combinatorics",
@@ -84,28 +69,13 @@
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "5"
-      },
-      {
-        "id": "B",
-        "en": "6"
-      },
-      {
-        "id": "C",
-        "en": "7"
-      },
-      {
-        "id": "D",
-        "en": "9"
-      }
+      { "id": "A", "en": "5" },
+      { "id": "B", "en": "6" },
+      { "id": "C", "en": "7" },
+      { "id": "D", "en": "9" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C52"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C02"
   },
   {
     "type": "Combinatorics",
@@ -114,28 +84,13 @@
       "vi": "Hỏi có bao nhiêu số chẵn tính từ số 24 đến số 41?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "8"
-      },
-      {
-        "id": "B",
-        "en": "9"
-      },
-      {
-        "id": "C",
-        "en": "10"
-      },
-      {
-        "id": "D",
-        "en": "17"
-      }
+      { "id": "A", "en": "8" },
+      { "id": "B", "en": "9" },
+      { "id": "C", "en": "10" },
+      { "id": "D", "en": "17" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C53"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C03"
   },
   {
     "type": "Combinatorics",
@@ -146,42 +101,17 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            12,
-            55,
-            38,
-            91,
-            49,
-            72,
-            15
-          ]
-        ]
+        "data": [[12, 55, 38, 91, 49, 72, 15]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "2"
-      },
-      {
-        "id": "B",
-        "en": "3"
-      },
-      {
-        "id": "C",
-        "en": "4"
-      },
-      {
-        "id": "D",
-        "en": "5"
-      }
+      { "id": "A", "en": "2" },
+      { "id": "B", "en": "3" },
+      { "id": "C", "en": "4" },
+      { "id": "D", "en": "5" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C54"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C04"
   },
   {
     "type": "Combinatorics",
@@ -190,28 +120,13 @@
       "vi": "Từ các chữ số 2, 5 và 8, hỏi lập được bao nhiêu số lẻ có hai chữ số? (Các chữ số có thể lặp lại)"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "3"
-      },
-      {
-        "id": "B",
-        "en": "6"
-      },
-      {
-        "id": "C",
-        "en": "9"
-      },
-      {
-        "id": "D",
-        "en": "4"
-      }
+      { "id": "A", "en": "3" },
+      { "id": "B", "en": "6" },
+      { "id": "C", "en": "9" },
+      { "id": "D", "en": "4" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C55"
+    "answer": { "type": "single", "key": "A" },
+    "id": "C05"
   },
   {
     "type": "Combinatorics",
@@ -220,28 +135,13 @@
       "vi": "Chọn 2 chữ số từ 1, 4, 7 và 9 để lập số có 2 chữ số sao cho tổng các chữ số bằng 10. Hỏi có bao nhiêu số như vậy?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "1"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "3"
-      },
-      {
-        "id": "D",
-        "en": "4"
-      }
+      { "id": "A", "en": "1" },
+      { "id": "B", "en": "2" },
+      { "id": "C", "en": "3" },
+      { "id": "D", "en": "4" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C56"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C06"
   },
   {
     "type": "Combinatorics",
@@ -249,44 +149,20 @@
       "en": "Arrange the following numbers in ascending order. What is the 4th number?",
       "vi": "Sắp xếp các số sau theo thứ tự tăng dần. Số thứ 4 là số nào?"
     },
-    "choices": [
-      {
-        "id": "A",
-        "en": "11"
-      },
-      {
-        "id": "B",
-        "en": "15"
-      },
-      {
-        "id": "C",
-        "en": "19"
-      },
-      {
-        "id": "D",
-        "en": "8"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C58",
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            15,
-            8,
-            27,
-            3,
-            19,
-            11
-          ]
-        ]
+        "data": [[15, 8, 27, 3, 19, 11]]
       }
-    }
+    },
+    "choices": [
+      { "id": "A", "en": "11" },
+      { "id": "B", "en": "15" },
+      { "id": "C", "en": "19" },
+      { "id": "D", "en": "8" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C07"
   },
   {
     "type": "Combinatorics",
@@ -295,28 +171,13 @@
       "vi": "Nếu một quy luật là: Hình vuông, Hình tròn, Hình tam giác... lặp lại, thì hình thứ 10 là hình gì?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "Square (Hình vuông)"
-      },
-      {
-        "id": "B",
-        "en": "Circle (Hình tròn)"
-      },
-      {
-        "id": "C",
-        "en": "Triangle (Hình tam giác)"
-      },
-      {
-        "id": "D",
-        "en": "Star (Ngôi sao)"
-      }
+      { "id": "A", "en": "Square (Hình vuông)" },
+      { "id": "B", "en": "Circle (Hình tròn)" },
+      { "id": "C", "en": "Triangle (Hình tam giác)" },
+      { "id": "D", "en": "Star (Ngôi sao)" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C60"
+    "answer": { "type": "single", "key": "A" },
+    "id": "C08"
   },
   {
     "type": "Combinatorics",
@@ -349,28 +210,13 @@
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "2"
-      },
-      {
-        "id": "B",
-        "en": "3"
-      },
-      {
-        "id": "C",
-        "en": "4"
-      },
-      {
-        "id": "D",
-        "en": "5"
-      }
+      { "id": "A", "en": "2" },
+      { "id": "B", "en": "3" },
+      { "id": "C", "en": "4" },
+      { "id": "D", "en": "5" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C61"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C09"
   },
   {
     "type": "Combinatorics",
@@ -379,28 +225,13 @@
       "vi": "Có bao nhiêu số có hai chữ số mà chữ số hàng chục là 3?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "9"
-      },
-      {
-        "id": "B",
-        "en": "10"
-      },
-      {
-        "id": "C",
-        "en": "11"
-      },
-      {
-        "id": "D",
-        "en": "8"
-      }
+      { "id": "A", "en": "9" },
+      { "id": "B", "en": "10" },
+      { "id": "C", "en": "11" },
+      { "id": "D", "en": "8" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C62"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C10"
   },
   {
     "type": "Combinatorics",
@@ -409,28 +240,13 @@
       "vi": "Tìm số nhỏ nhất có 3 chữ số khác nhau lập từ 0, 5, 2."
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "025"
-      },
-      {
-        "id": "B",
-        "en": "250"
-      },
-      {
-        "id": "C",
-        "en": "205"
-      },
-      {
-        "id": "D",
-        "en": "502"
-      }
+      { "id": "A", "en": "025" },
+      { "id": "B", "en": "250" },
+      { "id": "C", "en": "205" },
+      { "id": "D", "en": "502" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "C63"
+    "answer": { "type": "single", "key": "C" },
+    "id": "C11"
   },
   {
     "type": "Combinatorics",
@@ -441,48 +257,17 @@
     "figure": {
       "renderer": "squareConnect",
       "params": {
-        "data": [
-          [
-            8,
-            4
-          ],
-          [
-            2,
-            6
-          ],
-          [
-            8,
-            4
-          ],
-          [
-            "?"
-          ]
-        ]
+        "data": [[8, 4], [2, 6], [8, 4], ["?"]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "│"
-      },
-      {
-        "id": "B",
-        "en": "—"
-      },
-      {
-        "id": "C",
-        "en": "╲"
-      },
-      {
-        "id": "D",
-        "en": "╱"
-      }
+      { "id": "A", "en": "│" },
+      { "id": "B", "en": "—" },
+      { "id": "C", "en": "╲" },
+      { "id": "D", "en": "╱" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "C65"
+    "answer": { "type": "single", "key": "D" },
+    "id": "C12"
   },
   {
     "type": "Combinatorics",
@@ -491,28 +276,13 @@
       "vi": "Có bao nhiêu số chẵn có hai chữ số lập từ 0, 3, 6? (Có thể lặp lại chữ số)"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "4"
-      },
-      {
-        "id": "B",
-        "en": "6"
-      },
-      {
-        "id": "C",
-        "en": "3"
-      },
-      {
-        "id": "D",
-        "en": "2"
-      }
+      { "id": "A", "en": "4" },
+      { "id": "B", "en": "6" },
+      { "id": "C", "en": "3" },
+      { "id": "D", "en": "2" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C67"
+    "answer": { "type": "single", "key": "A" },
+    "id": "C13"
   },
   {
     "type": "Combinatorics",
@@ -521,29 +291,13 @@
       "vi": "Số nào lớn hơn 2023 là 100 đơn vị?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "2123"
-      },
-      {
-        "id": "B",
-        "en": "2033"
-      },
-      {
-        "id": "C",
-        "en": "3023"
-      },
-      {
-        "id": "D",
-        "en": "2223"
-      }
+      { "id": "A", "en": "2123" },
+      { "id": "B", "en": "2033" },
+      { "id": "C", "en": "3023" },
+      { "id": "D", "en": "2223" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C68",
-    "figure": ""
+    "answer": { "type": "single", "key": "A" },
+    "id": "C14"
   },
   {
     "type": "Combinatorics",
@@ -552,28 +306,13 @@
       "vi": "Nhìn vào quy luật: 5, 10, 15, 20... Tổng của hai số tiếp theo là bao nhiêu?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "45"
-      },
-      {
-        "id": "B",
-        "en": "55"
-      },
-      {
-        "id": "C",
-        "en": "50"
-      },
-      {
-        "id": "D",
-        "en": "60"
-      }
+      { "id": "A", "en": "45" },
+      { "id": "B", "en": "55" },
+      { "id": "C", "en": "50" },
+      { "id": "D", "en": "60" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C69"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C15"
   },
   {
     "type": "Combinatorics",
@@ -582,29 +321,13 @@
       "vi": "Có bao nhiêu hình tam giác trong một hình vuông có một đường chéo?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "1"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "3"
-      },
-      {
-        "id": "D",
-        "en": "4"
-      }
+      { "id": "A", "en": "1" },
+      { "id": "B", "en": "2" },
+      { "id": "C", "en": "3" },
+      { "id": "D", "en": "4" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C70",
-    "figure": ""
+    "answer": { "type": "single", "key": "B" },
+    "id": "C16"
   },
   {
     "type": "Combinatorics",
@@ -642,28 +365,13 @@
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "4"
-      },
-      {
-        "id": "B",
-        "en": "5"
-      },
-      {
-        "id": "C",
-        "en": "10"
-      },
-      {
-        "id": "D",
-        "en": "2"
-      }
+      { "id": "A", "en": "4" },
+      { "id": "B", "en": "5" },
+      { "id": "C", "en": "10" },
+      { "id": "D", "en": "2" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C71"
+    "answer": { "type": "single", "key": "A" },
+    "id": "C17"
   },
   {
     "type": "Combinatorics",
@@ -672,28 +380,13 @@
       "vi": "Tìm số còn thiếu trong dãy: 1, 2, 4, 7, 11, __"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "15"
-      },
-      {
-        "id": "B",
-        "en": "16"
-      },
-      {
-        "id": "C",
-        "en": "14"
-      },
-      {
-        "id": "D",
-        "en": "17"
-      }
+      { "id": "A", "en": "15" },
+      { "id": "B", "en": "16" },
+      { "id": "C", "en": "14" },
+      { "id": "D", "en": "17" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C72"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C18"
   },
   {
     "type": "Combinatorics",
@@ -702,28 +395,13 @@
       "vi": "Có bao nhiêu số từ 1 đến 30 có chữ số tận cùng là 3?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "2"
-      },
-      {
-        "id": "B",
-        "en": "3"
-      },
-      {
-        "id": "C",
-        "en": "4"
-      },
-      {
-        "id": "D",
-        "en": "5"
-      }
+      { "id": "A", "en": "2" },
+      { "id": "B", "en": "3" },
+      { "id": "C", "en": "4" },
+      { "id": "D", "en": "5" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C73"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C19"
   },
   {
     "type": "Combinatorics",
@@ -732,28 +410,13 @@
       "vi": "Số có hai chữ số nhỏ nhất mà tổng các chữ số bằng 9 là bao nhiêu?"
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "18"
-      },
-      {
-        "id": "B",
-        "en": "90"
-      },
-      {
-        "id": "C",
-        "en": "45"
-      },
-      {
-        "id": "D",
-        "en": "27"
-      }
+      { "id": "A", "en": "18" },
+      { "id": "B", "en": "90" },
+      { "id": "C", "en": "45" },
+      { "id": "D", "en": "27" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C74"
+    "answer": { "type": "single", "key": "A" },
+    "id": "C20"
   },
   {
     "type": "Combinatorics",
@@ -764,39 +427,17 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            "10101010",
-            "1010101",
-            "101010101",
-            "10110101"
-          ]
-        ]
+        "data": [["10101010", "1010101", "101010101", "10110101"]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "10101010"
-      },
-      {
-        "id": "B",
-        "en": "10110101"
-      },
-      {
-        "id": "C",
-        "en": "101010101"
-      },
-      {
-        "id": "D",
-        "en": "1010101"
-      }
+      { "id": "A", "en": "10101010" },
+      { "id": "B", "en": "10110101" },
+      { "id": "C", "en": "101010101" },
+      { "id": "D", "en": "1010101" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "C81"
+    "answer": { "type": "single", "key": "C" },
+    "id": "C21"
   },
   {
     "type": "Combinatorics",
@@ -807,39 +448,17 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            "77171717",
-            "7177171",
-            "77177177",
-            "77171711"
-          ]
-        ]
+        "data": [["77171717", "7177171", "77177177", "77171711"]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "77171717"
-      },
-      {
-        "id": "B",
-        "en": "77171711"
-      },
-      {
-        "id": "C",
-        "en": "77177177"
-      },
-      {
-        "id": "D",
-        "en": "7177171"
-      }
+      { "id": "A", "en": "77171717" },
+      { "id": "B", "en": "77171711" },
+      { "id": "C", "en": "77177177" },
+      { "id": "D", "en": "7177171" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "C82"
+    "answer": { "type": "single", "key": "D" },
+    "id": "C22"
   },
   {
     "type": "Combinatorics",
@@ -850,40 +469,17 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            "52525252",
-            "25252525",
-            "525252525",
-            "55225522",
-            "52525522"
-          ]
-        ]
+        "data": [["52525252", "25252525", "525252525", "55225522", "52525522"]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "55225522"
-      },
-      {
-        "id": "B",
-        "en": "525252525"
-      },
-      {
-        "id": "C",
-        "en": "52525522"
-      },
-      {
-        "id": "D",
-        "en": "52525252"
-      }
+      { "id": "A", "en": "55225522" },
+      { "id": "B", "en": "525252525" },
+      { "id": "C", "en": "52525522" },
+      { "id": "D", "en": "52525252" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C83"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C23"
   },
   {
     "type": "Combinatorics",
@@ -894,40 +490,17 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            "40404040",
-            "44004400",
-            "4040404",
-            "40040044",
-            "44400044"
-          ]
-        ]
+        "data": [["40404040", "44004400", "4040404", "40040044", "44400044"]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "4040404"
-      },
-      {
-        "id": "B",
-        "en": "40040044"
-      },
-      {
-        "id": "C",
-        "en": "40404040"
-      },
-      {
-        "id": "D",
-        "en": "44400044"
-      }
+      { "id": "A", "en": "4040404" },
+      { "id": "B", "en": "40040044" },
+      { "id": "C", "en": "40404040" },
+      { "id": "D", "en": "44400044" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "C84"
+    "answer": { "type": "single", "key": "A" },
+    "id": "C24"
   },
   {
     "type": "Combinatorics",
@@ -938,39 +511,316 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [
-          [
-            "12121212",
-            "12211221",
-            "1212121",
-            "11221122",
-            "121212122"
-          ]
-        ]
+        "data": [["12121212", "12211221", "1212121", "11221122", "121212122"]]
       }
     },
     "choices": [
-      {
-        "id": "A",
-        "en": "12211221"
-      },
-      {
-        "id": "B",
-        "en": "121212122"
-      },
-      {
-        "id": "C",
-        "en": "11221122"
-      },
-      {
-        "id": "D",
-        "en": "12121212"
-      }
+      { "id": "A", "en": "12211221" },
+      { "id": "B", "en": "121212122" },
+      { "id": "C", "en": "11221122" },
+      { "id": "D", "en": "12121212" }
     ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "C85"
+    "answer": { "type": "single", "key": "B" },
+    "id": "C25"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C26"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C27"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C28"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C29"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C30"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C31"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C32"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C33"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C34"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C35"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C36"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C37"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C38"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C39"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C40"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C41"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C42"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C43"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C44"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C45"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C46"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C47"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C48"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C49"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": { "en": "empty", "vi": "rỗng" },
+    "choices": [
+      { "id": "A", "en": "A" },
+      { "id": "B", "en": "B" },
+      { "id": "C", "en": "C" },
+      { "id": "D", "en": "D" }
+    ],
+    "answer": { "type": "single", "key": "B" },
+    "id": "C50"
   }
 ]
