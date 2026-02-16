@@ -35,6 +35,14 @@ function Edit({ dataType = "preliminary" }) {
     );
     setQuestions(all);
   };
+  const cleanStem = (str) => {
+    if (typeof str !== "string") return str;
+    let cleaned = str.trim();
+    // Remove leading number like "1. ", "12. "
+    cleaned = cleaned.replace(/^\d{1,2}\.\s*/, "");
+    return cleaned.trim();
+  };
+
   // Debug editors: update stem.en and choices[i].en
   const handleStemChange = (qIndex, newStem) => {
     setQuestions((prev) => {
@@ -42,11 +50,13 @@ function Edit({ dataType = "preliminary" }) {
       const q = next[qIndex] || {};
       try {
         // Parse the newStem string to JSON
-        const stemObj = JSON.parse(newStem);
+        let stemObj = JSON.parse(newStem);
+        if (stemObj.en) stemObj.en = cleanStem(stemObj.en);
+        if (stemObj.vi) stemObj.vi = cleanStem(stemObj.vi);
         next[qIndex] = { ...q, stem: stemObj };
       } catch (e) {
         // If parsing fails, store as is
-        next[qIndex] = { ...q, stem: newStem };
+        next[qIndex] = { ...q, stem: cleanStem(newStem) };
       }
       setTmpStem(false);
       removeSaved(next[qIndex]?.id);
@@ -57,9 +67,10 @@ function Edit({ dataType = "preliminary" }) {
     setQuestions((prev) => {
       const next = [...prev];
       try {
-        next[qIndex].stem[language] = JSON.parse(newStem);
+        let val = JSON.parse(newStem);
+        next[qIndex].stem[language] = cleanStem(val);
       } catch (e) {
-        next[qIndex].stem[language] = newStem;
+        next[qIndex].stem[language] = cleanStem(newStem);
       }
       if (language === "en") setTmpEnStem(false);
       if (language === "vi") setTmpViStem(false);
@@ -136,6 +147,14 @@ function Edit({ dataType = "preliminary" }) {
       try {
         // Parse the newValue string to JSON
         let updatedQuestion = JSON.parse(newValue);
+
+        // Clean stem if present
+        if (updatedQuestion.stem) {
+          if (updatedQuestion.stem.en)
+            updatedQuestion.stem.en = cleanStem(updatedQuestion.stem.en);
+          if (updatedQuestion.stem.vi)
+            updatedQuestion.stem.vi = cleanStem(updatedQuestion.stem.vi);
+        }
 
         // Add default stem if missing
         if (!updatedQuestion.stem) {
