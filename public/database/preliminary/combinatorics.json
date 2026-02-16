@@ -27,12 +27,27 @@
       }
     },
     "choices": [
-      { "id": "A", "en": "2" },
-      { "id": "B", "en": "3" },
-      { "id": "C", "en": "4" },
-      { "id": "D", "en": "6" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C01"
   },
   {
@@ -69,12 +84,27 @@
       }
     },
     "choices": [
-      { "id": "A", "en": "5" },
-      { "id": "B", "en": "6" },
-      { "id": "C", "en": "7" },
-      { "id": "D", "en": "9" }
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C02"
   },
   {
@@ -84,12 +114,27 @@
       "vi": "Hỏi có bao nhiêu số chẵn tính từ số 24 đến số 41?"
     },
     "choices": [
-      { "id": "A", "en": "8" },
-      { "id": "B", "en": "9" },
-      { "id": "C", "en": "10" },
-      { "id": "D", "en": "17" }
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C03"
   },
   {
@@ -101,16 +146,41 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [[12, 55, 38, 91, 49, 72, 15]]
+        "data": [
+          [
+            12,
+            55,
+            38,
+            91,
+            49,
+            72,
+            15
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "2" },
-      { "id": "B", "en": "3" },
-      { "id": "C", "en": "4" },
-      { "id": "D", "en": "5" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C04"
   },
   {
@@ -120,12 +190,27 @@
       "vi": "Từ các chữ số 2, 5 và 8, hỏi lập được bao nhiêu số lẻ có hai chữ số? (Các chữ số có thể lặp lại)"
     },
     "choices": [
-      { "id": "A", "en": "3" },
-      { "id": "B", "en": "6" },
-      { "id": "C", "en": "9" },
-      { "id": "D", "en": "4" }
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C05"
   },
   {
@@ -135,12 +220,27 @@
       "vi": "Chọn 2 chữ số từ 1, 4, 7 và 9 để lập số có 2 chữ số sao cho tổng các chữ số bằng 10. Hỏi có bao nhiêu số như vậy?"
     },
     "choices": [
-      { "id": "A", "en": "1" },
-      { "id": "B", "en": "2" },
-      { "id": "C", "en": "3" },
-      { "id": "D", "en": "4" }
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C06"
   },
   {
@@ -152,16 +252,40 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [[15, 8, 27, 3, 19, 11]]
+        "data": [
+          [
+            15,
+            8,
+            27,
+            3,
+            19,
+            11
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "11" },
-      { "id": "B", "en": "15" },
-      { "id": "C", "en": "19" },
-      { "id": "D", "en": "8" }
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "19"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C07"
   },
   {
@@ -171,12 +295,27 @@
       "vi": "Nếu một quy luật là: Hình vuông, Hình tròn, Hình tam giác... lặp lại, thì hình thứ 10 là hình gì?"
     },
     "choices": [
-      { "id": "A", "en": "Square (Hình vuông)" },
-      { "id": "B", "en": "Circle (Hình tròn)" },
-      { "id": "C", "en": "Triangle (Hình tam giác)" },
-      { "id": "D", "en": "Star (Ngôi sao)" }
+      {
+        "id": "A",
+        "en": "Square (Hình vuông)"
+      },
+      {
+        "id": "B",
+        "en": "Circle (Hình tròn)"
+      },
+      {
+        "id": "C",
+        "en": "Triangle (Hình tam giác)"
+      },
+      {
+        "id": "D",
+        "en": "Star (Ngôi sao)"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C08"
   },
   {
@@ -210,12 +349,27 @@
       }
     },
     "choices": [
-      { "id": "A", "en": "2" },
-      { "id": "B", "en": "3" },
-      { "id": "C", "en": "4" },
-      { "id": "D", "en": "5" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C09"
   },
   {
@@ -225,12 +379,27 @@
       "vi": "Có bao nhiêu số có hai chữ số mà chữ số hàng chục là 3?"
     },
     "choices": [
-      { "id": "A", "en": "9" },
-      { "id": "B", "en": "10" },
-      { "id": "C", "en": "11" },
-      { "id": "D", "en": "8" }
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C10"
   },
   {
@@ -240,12 +409,27 @@
       "vi": "Tìm số nhỏ nhất có 3 chữ số khác nhau lập từ 0, 5, 2."
     },
     "choices": [
-      { "id": "A", "en": "025" },
-      { "id": "B", "en": "250" },
-      { "id": "C", "en": "205" },
-      { "id": "D", "en": "502" }
+      {
+        "id": "A",
+        "en": "025"
+      },
+      {
+        "id": "B",
+        "en": "250"
+      },
+      {
+        "id": "C",
+        "en": "205"
+      },
+      {
+        "id": "D",
+        "en": "502"
+      }
     ],
-    "answer": { "type": "single", "key": "C" },
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "C11"
   },
   {
@@ -257,16 +441,47 @@
     "figure": {
       "renderer": "squareConnect",
       "params": {
-        "data": [[8, 4], [2, 6], [8, 4], ["?"]]
+        "data": [
+          [
+            8,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            "?"
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "│" },
-      { "id": "B", "en": "—" },
-      { "id": "C", "en": "╲" },
-      { "id": "D", "en": "╱" }
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
     ],
-    "answer": { "type": "single", "key": "D" },
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
     "id": "C12"
   },
   {
@@ -276,12 +491,27 @@
       "vi": "Có bao nhiêu số chẵn có hai chữ số lập từ 0, 3, 6? (Có thể lặp lại chữ số)"
     },
     "choices": [
-      { "id": "A", "en": "4" },
-      { "id": "B", "en": "6" },
-      { "id": "C", "en": "3" },
-      { "id": "D", "en": "2" }
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C13"
   },
   {
@@ -291,12 +521,27 @@
       "vi": "Số nào lớn hơn 2023 là 100 đơn vị?"
     },
     "choices": [
-      { "id": "A", "en": "2123" },
-      { "id": "B", "en": "2033" },
-      { "id": "C", "en": "3023" },
-      { "id": "D", "en": "2223" }
+      {
+        "id": "A",
+        "en": "2123"
+      },
+      {
+        "id": "B",
+        "en": "2033"
+      },
+      {
+        "id": "C",
+        "en": "3023"
+      },
+      {
+        "id": "D",
+        "en": "2223"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C14"
   },
   {
@@ -306,12 +551,27 @@
       "vi": "Nhìn vào quy luật: 5, 10, 15, 20... Tổng của hai số tiếp theo là bao nhiêu?"
     },
     "choices": [
-      { "id": "A", "en": "45" },
-      { "id": "B", "en": "55" },
-      { "id": "C", "en": "50" },
-      { "id": "D", "en": "60" }
+      {
+        "id": "A",
+        "en": "45"
+      },
+      {
+        "id": "B",
+        "en": "55"
+      },
+      {
+        "id": "C",
+        "en": "50"
+      },
+      {
+        "id": "D",
+        "en": "60"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C15"
   },
   {
@@ -321,12 +581,27 @@
       "vi": "Có bao nhiêu hình tam giác trong một hình vuông có một đường chéo?"
     },
     "choices": [
-      { "id": "A", "en": "1" },
-      { "id": "B", "en": "2" },
-      { "id": "C", "en": "3" },
-      { "id": "D", "en": "4" }
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C16"
   },
   {
@@ -365,12 +640,27 @@
       }
     },
     "choices": [
-      { "id": "A", "en": "4" },
-      { "id": "B", "en": "5" },
-      { "id": "C", "en": "10" },
-      { "id": "D", "en": "2" }
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C17"
   },
   {
@@ -380,12 +670,27 @@
       "vi": "Tìm số còn thiếu trong dãy: 1, 2, 4, 7, 11, __"
     },
     "choices": [
-      { "id": "A", "en": "15" },
-      { "id": "B", "en": "16" },
-      { "id": "C", "en": "14" },
-      { "id": "D", "en": "17" }
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C18"
   },
   {
@@ -395,12 +700,27 @@
       "vi": "Có bao nhiêu số từ 1 đến 30 có chữ số tận cùng là 3?"
     },
     "choices": [
-      { "id": "A", "en": "2" },
-      { "id": "B", "en": "3" },
-      { "id": "C", "en": "4" },
-      { "id": "D", "en": "5" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C19"
   },
   {
@@ -410,12 +730,27 @@
       "vi": "Số có hai chữ số nhỏ nhất mà tổng các chữ số bằng 9 là bao nhiêu?"
     },
     "choices": [
-      { "id": "A", "en": "18" },
-      { "id": "B", "en": "90" },
-      { "id": "C", "en": "45" },
-      { "id": "D", "en": "27" }
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "90"
+      },
+      {
+        "id": "C",
+        "en": "45"
+      },
+      {
+        "id": "D",
+        "en": "27"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C20"
   },
   {
@@ -427,16 +762,38 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [["10101010", "1010101", "101010101", "10110101"]]
+        "data": [
+          [
+            "10101010",
+            "1010101",
+            "101010101",
+            "10110101"
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "10101010" },
-      { "id": "B", "en": "10110101" },
-      { "id": "C", "en": "101010101" },
-      { "id": "D", "en": "1010101" }
+      {
+        "id": "A",
+        "en": "10101010"
+      },
+      {
+        "id": "B",
+        "en": "10110101"
+      },
+      {
+        "id": "C",
+        "en": "101010101"
+      },
+      {
+        "id": "D",
+        "en": "1010101"
+      }
     ],
-    "answer": { "type": "single", "key": "C" },
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "C21"
   },
   {
@@ -448,16 +805,38 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [["77171717", "7177171", "77177177", "77171711"]]
+        "data": [
+          [
+            "77171717",
+            "7177171",
+            "77177177",
+            "77171711"
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "77171717" },
-      { "id": "B", "en": "77171711" },
-      { "id": "C", "en": "77177177" },
-      { "id": "D", "en": "7177171" }
+      {
+        "id": "A",
+        "en": "77171717"
+      },
+      {
+        "id": "B",
+        "en": "77171711"
+      },
+      {
+        "id": "C",
+        "en": "77177177"
+      },
+      {
+        "id": "D",
+        "en": "7177171"
+      }
     ],
-    "answer": { "type": "single", "key": "D" },
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
     "id": "C22"
   },
   {
@@ -469,16 +848,39 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [["52525252", "25252525", "525252525", "55225522", "52525522"]]
+        "data": [
+          [
+            "52525252",
+            "25252525",
+            "525252525",
+            "55225522",
+            "52525522"
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "55225522" },
-      { "id": "B", "en": "525252525" },
-      { "id": "C", "en": "52525522" },
-      { "id": "D", "en": "52525252" }
+      {
+        "id": "A",
+        "en": "55225522"
+      },
+      {
+        "id": "B",
+        "en": "525252525"
+      },
+      {
+        "id": "C",
+        "en": "52525522"
+      },
+      {
+        "id": "D",
+        "en": "52525252"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C23"
   },
   {
@@ -490,16 +892,39 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [["40404040", "44004400", "4040404", "40040044", "44400044"]]
+        "data": [
+          [
+            "40404040",
+            "44004400",
+            "4040404",
+            "40040044",
+            "44400044"
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "4040404" },
-      { "id": "B", "en": "40040044" },
-      { "id": "C", "en": "40404040" },
-      { "id": "D", "en": "44400044" }
+      {
+        "id": "A",
+        "en": "4040404"
+      },
+      {
+        "id": "B",
+        "en": "40040044"
+      },
+      {
+        "id": "C",
+        "en": "40404040"
+      },
+      {
+        "id": "D",
+        "en": "44400044"
+      }
     ],
-    "answer": { "type": "single", "key": "A" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C24"
   },
   {
@@ -511,316 +936,973 @@
     "figure": {
       "renderer": "charGrid",
       "params": {
-        "data": [["12121212", "12211221", "1212121", "11221122", "121212122"]]
+        "data": [
+          [
+            "12121212",
+            "12211221",
+            "1212121",
+            "11221122",
+            "121212122"
+          ]
+        ]
       }
     },
     "choices": [
-      { "id": "A", "en": "12211221" },
-      { "id": "B", "en": "121212122" },
-      { "id": "C", "en": "11221122" },
-      { "id": "D", "en": "12121212" }
+      {
+        "id": "A",
+        "en": "12211221"
+      },
+      {
+        "id": "B",
+        "en": "121212122"
+      },
+      {
+        "id": "C",
+        "en": "11221122"
+      },
+      {
+        "id": "D",
+        "en": "12121212"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C25"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Separate the 10 durians below equally into 5 baskets. How many durians will you put in each basket?",
+      "vi": "Chia đều 10 quả sầu riêng dưới đây vào 5 chiếc giỏ. Hỏi mỗi chiếc giỏ có bao nhiêu quả sầu riêng?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C26"
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C26",
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈",
+            "🍈"
+          ]
+        ]
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "22. How many even numbers are there in the sequence below?\n",
+      "vi": "Hỏi có bao nhiêu số chẵn trong các số dưới đây?\n"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "1"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C27"
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C27",
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "15",
+            "42",
+            "30",
+            "9",
+            "11",
+            "6",
+            "51"
+          ]
+        ]
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "How many 2-digit even numbers can be formed by using digits 1, 3, 4 and 6? (Each number\ncan be used only once)",
+      "vi": "Từ các chữ số 1, 3, 4 và 6, hỏi lập được bao nhiêu số chẵn có hai chữ số? (Mỗi chữ số chỉ được dùng\nduy nhất một lần)."
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C28"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C28",
+    "figure": ""
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Arrange the following numbers in descending order to find the 2nd smallest number?\n",
+      "vi": "Sắp xếp các số dưới đây theo thứ tự từ lớn đến bé để tìm ra số bé thứ hai?\n"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "27"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C29"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C29",
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "3",
+            "15",
+            "2",
+            "27",
+            "30",
+            "19",
+            "8"
+          ]
+        ]
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Which number below is the smallest?",
+      "vi": "Số nào dưới đây là nhỏ nhất?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "20201110"
+      },
+      {
+        "id": "B",
+        "en": "20112010"
+      },
+      {
+        "id": "C",
+        "en": "20211020"
+      },
+      {
+        "id": "D",
+        "en": "20101021"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C30"
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C30",
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "20201110",
+            "",
+            "20112010",
+            "",
+            "20211020",
+            "",
+            "20101021"
+          ]
+        ]
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Separate 15 apples into 5 baskets equally. How many apples are there in each basket?",
+      "vi": "Chia đều 15 quả táo vào 5 giỏ. Hỏi mỗi giỏ có bao nhiêu quả táo?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C31"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "How many odd numbers are there in the sequence below?",
+      "vi": "Hỏi có bao nhiêu số lẻ trong dãy số dưới đây?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C32"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C32",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "218, 12, 88, 357, 246, 99, 214, 135"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Choose 2 digits, without repetition, from 0, 1, 7 and 8 to form 2-digit even numbers. How\nmany different number(s) is / are there?",
+      "vi": "Chọn 2 chữ số không lặp lại từ các chữ số 0, 1, 7 và 8 để lập thành số chẵn có hai chữ số. Hỏi có thể\nlập được bao nhiêu số khác nhau như vậy?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C33"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Which number below is the smallest?",
+      "vi": "Số nào dưới đây là số nhỏ nhất?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "20211234"
+      },
+      {
+        "id": "B",
+        "en": "20206792"
+      },
+      {
+        "id": "C",
+        "en": "21203721"
+      },
+      {
+        "id": "D",
+        "en": "20213436"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C34"
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C34",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "20211234、 20206792 、 21208721 、 20213436"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "What is the smallest 4-digit number formed by digits 0, 1, 5, 6 and 9 without repetition?",
+      "vi": "Số nhỏ nhất có 4 chữ số được lập từ các chữ số 0, 1, 5, 6 và 9 là bao nhiêu? (Các chữ số không được\nlặp lại)"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "1065"
+      },
+      {
+        "id": "B",
+        "en": "1569"
+      },
+      {
+        "id": "C",
+        "en": "1059"
+      },
+      {
+        "id": "D",
+        "en": "1056"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
     "id": "C35"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Divide the candies below into 3 baskets equally. How many candies are there in each\nbasket?",
+      "vi": "Chia đều số kẹo sau đây vào 3 giỏ. Hỏi mỗi giỏ có bao nhiêu cái kẹo?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C36"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C36",
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍬",
+            "🍬",
+            "🍬",
+            "🍬",
+            "🍬",
+            "🍬"
+          ],
+          [
+            "🍬",
+            "🍬",
+            "🍬",
+            "🍬",
+            "🍬",
+            "🍬"
+          ]
+        ]
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "How many odd numbers are there in the sequence below?",
+      "vi": "Hỏi có bao nhiêu số lẻ trong dãy số dưới đây?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C37"
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C37",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5, 18, 12, 29, 17, 26, 43"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "How many 2-digit numbers can be formed by using digits 0, 1, 4 and 9? (Each number can\nbe used only once)",
+      "vi": "Từ các chữ số 0, 1, 4 và 9, hỏi lập được bao nhiêu số có hai chữ số? (Mỗi chữ số chỉ được dùng duy\nnhất một lần)"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "C38"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Which number below is the smallest?",
+      "vi": "Số nào dưới đây là số nhỏ nhất?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "3030343"
+      },
+      {
+        "id": "B",
+        "en": "3031013"
+      },
+      {
+        "id": "C",
+        "en": "303143"
+      },
+      {
+        "id": "D",
+        "en": "3031031"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C39"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C39",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3031031, 303143, 3031013, 3030343"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "According to the pattern below, find the most suitable clock to fill in the question mark.",
+      "vi": "Dựa vào quy luật dưới đây, tìm chiếc đồng hồ thích hợp nhất điền vào vị trí dấu hỏi chấm."
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "🕐"
+      },
+      {
+        "id": "B",
+        "en": "🕔"
+      },
+      {
+        "id": "C",
+        "en": "🕒"
+      },
+      {
+        "id": "D",
+        "en": "🕚"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C40"
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C40",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "🕗🕘🕙?"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Which number below is the greatest number?",
+      "vi": "Tìm số lớn nhất trong các số dưới đây?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "2102202"
+      },
+      {
+        "id": "B",
+        "en": "20022021"
+      },
+      {
+        "id": "C",
+        "en": "20102021"
+      },
+      {
+        "id": "D",
+        "en": "20102120"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C41"
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C41",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2102202 、 20022021 、 20102021 、 20102120"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Among the following numbers, how many odd numbers are there?",
+      "vi": "Hỏi có bao nhiêu số lẻ trong các số dưới đây?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C42"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C42",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "23 , 62 , 222 , 303, 6 , 89 , 123 , 76"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Choose 2 digits, without repetition, from 0, 2, 4, 8 and 7 to form 2-digit even numbers.\nHow many different numbers are there?",
+      "vi": "Chọn 2 chữ số không lặp lại từ 0, 2, 4, 8 và 7 để lập thành số chẵn có 2 chữ số. Hỏi có thể lập được\nbao nhiêu số khác nhau như vậy?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
     "id": "C43"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Amy, Billy, Celine and Dan donated 20 dollars to the animal rescue center. Given that each\nperson must donate at least 3 dollars and their donation must be different, at most how\nmany dollars can Dan donate?",
+      "vi": "Amy, Billy, Celine và Dan quyên góp 20 đô cho trạm cứu hộ động vật. Biết rằng mỗi bạn cần quyên\ngóp ít nhất 3 đô và số tiền quyên góp của mỗi bạn là khác nhau. Hỏi Dan có thể quyên góp nhiều\nnhất bao nhiêu đô?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "17"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "C44"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "The 3 x 3 square on the right is called a “Magic square” with 9 consecutive numbers from\n1 to 9 in each cell. The sum of numbers in each column or row is equal. Find the number\nthat should be filled in the cell with question mark",
+      "vi": "Hình vuông 3 x 3 bên phải được gọi là “Hình vuông ma thuật” gồm 9 số liên tiếp từ 1 đến 9 được\nđiền vào mỗi ô. Tổng các số ở mỗi hàng và mỗi cột là bằng nhau. Hãy tìm số thích hợp để điền vào\nô có dấu hỏi chấm."
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C45"
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C45",
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "?",
+            "7",
+            ""
+          ],
+          [
+            "9",
+            5,
+            1
+          ],
+          [
+            "",
+            3,
+            ""
+          ]
+        ]
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Separate the following stars into 2 equal groups. How many stars are there in each group?",
+      "vi": "Chia các hình ngôi sao dưới đây thành 2 phần bằng nhau. Hỏi mỗi phần có bao nhiêu ngôi sao?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C46"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C46",
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "**********"
+      }
+    }
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "How many even numbers are there from 18 to 35?",
+      "vi": "Hỏi có bao nhiêu số chẵn tính từ số 18 đến số 35?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
     "id": "C47"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "Adam has one $1 coin, one $2 coin and one $5 coin. At most how many toy car(s) can he\nbuy, given that each toy car costs $3?",
+      "vi": "Adam có một đồng xu 1 đô, một đồng xu 2 đô và một đồng xu 5 đô. Hỏi cậu bé có thể mua được\nnhiều nhất bao nhiêu chiếc xe ô tô đồ chơi, biết rằng mỗi chiếc xe trị giá 3 đô?"
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
     "id": "C48"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "How many 2-digit numbers can be formed by using digits 0, 2, 6 and 9? (Each digit can be\nrepeated).",
+      "vi": "Từ các chữ số 0, 2, 6 và 9, hỏi lập được bao nhiêu số có hai chữ số? (Các chữ số có thể lặp lại)."
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
     "id": "C49"
   },
   {
     "type": "Combinatorics",
-    "stem": { "en": "empty", "vi": "rỗng" },
+    "stem": {
+      "en": "From the pattern below, find the most suitable figure for Figure 4.",
+      "vi": "Dựa vào quy luật dưới đây, tìm đáp án thích hợp nhất cho hình số 4."
+    },
     "choices": [
-      { "id": "A", "en": "A" },
-      { "id": "B", "en": "B" },
-      { "id": "C", "en": "C" },
-      { "id": "D", "en": "D" }
+      {
+        "id": "A",
+        "en": "_"
+      },
+      {
+        "id": "B",
+        "en": "/"
+      },
+      {
+        "id": "C",
+        "en": "|"
+      },
+      {
+        "id": "D",
+        "en": "\\"
+      }
     ],
-    "answer": { "type": "single", "key": "B" },
-    "id": "C50"
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C50",
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "circles": "",
+        "data": [
+          [
+            6,
+            2
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    }
   }
 ]

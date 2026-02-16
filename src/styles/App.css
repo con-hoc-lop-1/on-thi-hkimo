@@ -1,141 +1,141 @@
 .question .form-check label {
-    padding: 7px 5px 7px 0;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+  padding: 7px 5px 7px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
 }
 
 .question .form-check-label:first-child {
-    background: #aaa;
-    padding: 5px 10px;
-    font-weight: normal;
+  background: #aaa;
+  padding: 5px 10px;
+  font-weight: normal;
 }
 
 .question .form-check-label {
-    padding: 5px 15px;
-    background: #ddd;
-    border-radius: 5px;
-    width: auto;
-    margin-left: 5px;
-    font-weight: bold;
+  padding: 5px 15px;
+  background: #ddd;
+  border-radius: 5px;
+  width: auto;
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 .question .form-check-input[type=radio] {
-    opacity: 0;
+  opacity: 0;
 }
 
 .question .form-check {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .question .form-check.answer-right label {
-    background: #9cc1a2dd;
+  background: #9cc1a2dd;
 }
 
 .question .form-check .form-check-input:checked + label {
-    border-color: #89bfe5;
+  border-color: #89bfe5;
 }
 
 .question .form-check .form-check-input:checked + label .form-check-label {
-    background: #89bfe5;
+  background: #89bfe5;
 }
 
 .review .form-check label {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 .review .form-check-input[checked] ~ .form-check-label {
-    opacity: 1;
+  opacity: 1;
 }
 
 .review .form-check-label.text-success {
-    opacity: 1;
+  opacity: 1;
 }
 
 .paper-mode .paper-question {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .paper-mode .answer-sheet {
-    page-break-before: always;
+  page-break-before: always;
 }
 
 .paper-mode .answer-grid {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .paper-mode .question-title {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .paper-mode .question-title span {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .paper-mode .answer-item {
-    display: flex;
-    width: calc(20% - 1rem);
-    justify-content: space-between;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
 }
 
 .paper-mode .answer-separator {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .blank-page .question-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .blank-page .question {
-    border: 1px solid #000;
-    padding: 5px;
+  border: 1px solid #000;
+  padding: 5px;
 }
 
 .blank-page .choices {
-    display: flex;
-    gap: 5px;
-    margin-top: 3px;
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
 }
 
 .blank-page .choice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
 }
 
 .blank-page .box {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #000;
-    margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  margin-top: 2px;
 }
 
 .blank-page .q25 {
-    grid-column: span 4;
-    justify-self: center;
-    width: 180px;
-    text-align: center;
+  grid-column: span 4;
+  justify-self: center;
+  width: 180px;
+  text-align: center;
 }
 
 .btn-block {
-    width: 100%;
+  width: 100%;
 }
 
 .question-edit-mode .question-item .form-label {
-    background: #ddd;
-    border-radius: 5px;
-    padding: 0 10px;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 0 10px;
 }
 
 .question-edit-mode .question-item:not(:last-child) {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #a8a5a5;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a8a5a5;
 }

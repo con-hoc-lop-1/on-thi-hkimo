@@ -1,6 +1,129 @@
 import React, { useEffect, useState } from "react";
 import { loadAllQuestions } from "./utils";
-import { renderFigure } from "./figure";
+import { FIGURE_METADATA, renderFigure } from "./figure";
+
+function FigureEditor({ figure, onChange }) {
+  // Use a ref to store the initial figure to avoid re-initializing state on every render
+  const [localFigure, setLocalFigure] = useState(figure || {});
+
+  // Update local state when figure prop changes (e.g. after a save or switching questions)
+  useEffect(() => {
+    setLocalFigure(figure || {});
+  }, [JSON.stringify(figure)]);
+
+  const handleRendererChange = (e) => {
+    const renderer = e.target.value;
+    const newFigure =
+      renderer === "NONE" ? {} : { renderer, params: localFigure.params || {} };
+    setLocalFigure(newFigure);
+    onChange(newFigure);
+  };
+
+  const handleParamChange = (name, value, type) => {
+    let finalValue = value;
+    if (type === "number") {
+      finalValue = value === "" ? 0 : Number(value);
+    } else if (type === "array") {
+      try {
+        finalValue = JSON.parse(value);
+      } catch (e) {
+        // Keep as string while editing
+        finalValue = value;
+      }
+    }
+
+    const newFigure = {
+      ...localFigure,
+      params: {
+        ...(localFigure.params || {}),
+        [name]: finalValue,
+      },
+    };
+    setLocalFigure(newFigure);
+    // Only call onChange if it's valid JSON for array types
+    if (type === "array") {
+      try {
+        JSON.parse(value);
+        onChange(newFigure);
+      } catch (e) {
+        // Don't sync yet
+      }
+    } else {
+      onChange(newFigure);
+    }
+  };
+
+  const currentRenderer = localFigure.renderer || "NONE";
+  const metadata = FIGURE_METADATA[currentRenderer];
+
+  return (
+    <div className="figure-editor border rounded p-2 bg-white">
+      <div className="mb-2">
+        <label className="form-label small fw-bold">Renderer</label>
+        <select
+          className="form-select form-select-sm"
+          value={currentRenderer}
+          onChange={handleRendererChange}
+        >
+          <option value="NONE">NONE</option>
+          {Object.keys(FIGURE_METADATA).map((key) => (
+            <option key={key} value={key}>
+              {key}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {metadata && (
+        <div className="params-editor mt-2">
+          {Object.entries(metadata).map(([name, type]) => {
+            const val = localFigure.params?.[name];
+            const displayVal =
+              type === "array"
+                ? typeof val === "string"
+                  ? val
+                  : JSON.stringify(val)
+                : (val ?? "");
+
+            return (
+              <div key={name} className="mb-2">
+                <label className="form-label small mb-1">{name}</label>
+                {type === "array" ? (
+                  <textarea
+                    className="form-control form-control-sm"
+                    rows={3}
+                    value={displayVal}
+                    onChange={(e) =>
+                      handleParamChange(name, e.target.value, type)
+                    }
+                  />
+                ) : type === "number" ? (
+                  <input
+                    type="number"
+                    className="form-control form-control-sm"
+                    value={displayVal}
+                    onChange={(e) =>
+                      handleParamChange(name, e.target.value, type)
+                    }
+                  />
+                ) : (
+                  <input
+                    type="text"
+                    className="form-control form-control-sm"
+                    value={displayVal}
+                    onChange={(e) =>
+                      handleParamChange(name, e.target.value, type)
+                    }
+                  />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
 
 function Edit({ dataType = "preliminary" }) {
   const listQuestionFiles = [
@@ -25,6 +148,18 @@ function Edit({ dataType = "preliminary" }) {
   const [tmpChoice, setTmpChoice] = useState(false);
   const [tmpFigure, setTmpFigure] = useState(false);
   const [tmpAnswer, setTmpAnswer] = useState(false);
+
+  useEffect(() => {
+    if (questions.length > 0) {
+      setTmpEnStem(false);
+      setTmpViStem(false);
+      setTmpStem(false);
+      setTmpFigure(false);
+      setTmpChoice(false);
+      setTmpAnswer(false);
+      setTmpFull(false);
+    }
+  }, [questions.length]);
 
   const reloadAll = async () => {
     const all = await loadAllQuestions(
@@ -85,7 +220,8 @@ function Edit({ dataType = "preliminary" }) {
       const q = next[qIndex] || {};
       try {
         // Parse the newFigure string to JSON
-        const figureObj = JSON.parse(newFigure);
+        const figureObj =
+          typeof newFigure === "string" ? JSON.parse(newFigure) : newFigure;
         next[qIndex] = { ...q, figure: figureObj };
       } catch (e) {
         // If parsing fails, store as is
@@ -592,27 +728,18 @@ function Edit({ dataType = "preliminary" }) {
                   <div className="question-item mb-2">
                     <label className="form-label">Figure</label>
                     <div className="row">
-                      <div className="col-8">
+                      <div className="col-4">
                         <div className="figure-container">
                           {renderFigure(q)}
                         </div>
                       </div>
-                      <div className="col-4">
+                      <div className="col-8">
                         <div className="figure-container">
-                          <textarea
-                            className="form-control"
-                            rows={10}
-                            onFocus={(e) => e.target.select()}
-                            value={
-                              tmpFigure
-                                ? tmpFigure
-                                : JSON.stringify(q.figure, null, 2)
-                            }
-                            onChange={(e) => {
-                              setTmpFigure(e.target.value);
-                            }}
-                            onBlur={(e) =>
-                              handleFigureChange(qi, e.target.value)
+                          <FigureEditor
+                            key={qi}
+                            figure={q.figure}
+                            onChange={(newFigure) =>
+                              handleFigureChange(qi, newFigure)
                             }
                           />
                         </div>
@@ -677,13 +804,13 @@ function Edit({ dataType = "preliminary" }) {
                   <div className="question-item mb-2">
                     <label className="form-label">Answer</label>
                     <div className="row">
-                      <div className="col-8">
+                      <div className="col-6">
                         <div className="answer-item border rounded me-2 ms-2 mb-1 p-2 bg-light">
                           <span className="top-left">Correct answer:</span>
                           <strong>{q.answer ? q.answer.key : ""}</strong>
                         </div>
                       </div>
-                      <div className="col-4">
+                      <div className="col-6">
                         <textarea
                           className="form-control"
                           rows={2}

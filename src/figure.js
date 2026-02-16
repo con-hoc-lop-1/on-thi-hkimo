@@ -833,9 +833,82 @@ const FIGURES = {
   svg: (p) => <SvgFigure {...p} />,
 };
 
+export const FIGURE_METADATA = {
+  symbolPattern: {
+    grid: "array",
+  },
+  groupRepeats: {
+    symbol: "string",
+    groups: "array",
+  },
+  GroupRepeatsGrid: {
+    symbol: "string",
+    groups: "array",
+  },
+  twoBins: {
+    left: "number",
+    right: "number",
+    symbol: "string",
+    labels: "array",
+  },
+  gridSquareTables: {
+    data: "array",
+  },
+  isoCubes: {
+    layout: "array",
+    unit: "number",
+  },
+  regularPolygon: {
+    sides: "number",
+    size: "number",
+    radiusJitter: "number",
+    minEdge: "number",
+  },
+  stackPattern: {
+    stacks: "array",
+  },
+  columnAddition: {
+    terms: "array",
+    result: "string",
+    plusIndex: "number",
+    fontSize: "number",
+  },
+  table: {
+    data: "array",
+  },
+  groupMatrices: {
+    data: "array",
+  },
+  balances: {
+    balances: "array",
+  },
+  squareConnect: {
+    data: "array",
+  },
+  charGrid: {
+    data: "array",
+  },
+  lineSegments: {
+    points: "array",
+    segments: "array",
+  },
+  multiCircles: {
+    circles: "array",
+  },
+  geometryOverlapFigure: {
+    shapes: "array",
+  },
+  text: {
+    content: "string",
+  },
+  svg: {
+    svg: "string",
+  },
+};
+
 // Hàm hiển thị figure theo schema dữ liệu
 export function renderFigure(q) {
-  if (q.figure && q.figure.renderer) {
+  if (q && q.figure && q.figure.renderer) {
     const { renderer, params = {} } = q.figure;
     const Comp = FIGURES[renderer];
     if (Comp) return <div className="mt-3">{Comp(params)}</div>;
@@ -845,4 +918,5 @@ export function renderFigure(q) {
       </div>
     );
   }
+  return null;
 }
