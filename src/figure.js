@@ -1,6 +1,6 @@
 // ================== FIGURE RENDERERS (JS version) ==================
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function SvgIcon({ kind, size = 48, className = "" }) {
   const s = size,
@@ -919,4 +919,126 @@ export function renderFigure(q) {
     );
   }
   return null;
+}
+export function FigureEditor({ figure, onChange }) {
+  // Use a ref to store the initial figure to avoid re-initializing state on every render
+  const [localFigure, setLocalFigure] = useState(figure || {});
+
+  // Update local state when figure prop changes (e.g. after a save or switching questions)
+  useEffect(() => {
+    setLocalFigure(figure || {});
+  }, [JSON.stringify(figure)]);
+
+  const handleRendererChange = (e) => {
+    const renderer = e.target.value;
+    const newFigure =
+      renderer === "NONE" ? {} : { renderer, params: localFigure.params || {} };
+    setLocalFigure(newFigure);
+    onChange(newFigure);
+  };
+
+  const handleParamChange = (name, value, type) => {
+    let finalValue = value;
+    if (type === "number") {
+      finalValue = value === "" ? 0 : Number(value);
+    } else if (type === "array") {
+      try {
+        finalValue = JSON.parse(value);
+      } catch (e) {
+        // Keep as string while editing
+        finalValue = value;
+      }
+    }
+
+    const newFigure = {
+      ...localFigure,
+      params: {
+        ...(localFigure.params || {}),
+        [name]: finalValue,
+      },
+    };
+    setLocalFigure(newFigure);
+    // Only call onChange if it's valid JSON for array types
+    if (type === "array") {
+      try {
+        JSON.parse(value);
+        onChange(newFigure);
+      } catch (e) {
+        // Don't sync yet
+      }
+    } else {
+      onChange(newFigure);
+    }
+  };
+
+  const currentRenderer = localFigure.renderer || "NONE";
+  const metadata = FIGURE_METADATA[currentRenderer];
+
+  return (
+    <div className="figure-editor border rounded p-2 bg-white">
+      <div className="mb-2">
+        <label className="form-label small fw-bold">Renderer</label>
+        <select
+          className="form-select form-select-sm"
+          value={currentRenderer}
+          onChange={handleRendererChange}
+        >
+          <option value="NONE">NONE</option>
+          {Object.keys(FIGURE_METADATA).map((key) => (
+            <option key={key} value={key}>
+              {key}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {metadata && (
+        <div className="params-editor mt-2">
+          {Object.entries(metadata).map(([name, type]) => {
+            const val = localFigure.params?.[name];
+            const displayVal =
+              type === "array"
+                ? typeof val === "string"
+                  ? val
+                  : JSON.stringify(val)
+                : (val ?? "");
+
+            return (
+              <div key={name} className="mb-2">
+                <label className="form-label small mb-1">{name}</label>
+                {type === "array" ? (
+                  <textarea
+                    className="form-control form-control-sm"
+                    rows={3}
+                    value={displayVal}
+                    onChange={(e) =>
+                      handleParamChange(name, e.target.value, type)
+                    }
+                  />
+                ) : type === "number" ? (
+                  <input
+                    type="number"
+                    className="form-control form-control-sm"
+                    value={displayVal}
+                    onChange={(e) =>
+                      handleParamChange(name, e.target.value, type)
+                    }
+                  />
+                ) : (
+                  <input
+                    type="text"
+                    className="form-control form-control-sm"
+                    value={displayVal}
+                    onChange={(e) =>
+                      handleParamChange(name, e.target.value, type)
+                    }
+                  />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
 }
