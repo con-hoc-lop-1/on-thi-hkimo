@@ -5,8 +5,8 @@ import { FigureEditor, renderFigure } from "./figure";
 function Edit({ dataType = "preliminary" }) {
   const listQuestionFiles = [
     // "arithmetic",
-    "combinatorics",
-    // "geometry",
+    // "combinatorics",
+    "geometry",
     // "logic-thinking",
     // "number-theory",
   ];
