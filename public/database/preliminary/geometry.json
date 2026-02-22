@@ -86,7 +86,7 @@
         ]
       }
     },
-    "id": "G07"
+    "id": "G02"
   },
   {
     "type": "Geometry",
@@ -158,7 +158,7 @@
         ]
       }
     },
-    "id": "G09"
+    "id": "G03"
   },
   {
     "type": "Geometry",
@@ -203,7 +203,7 @@
         ]
       }
     },
-    "id": "G17"
+    "id": "G04"
   },
   {
     "type": "Geometry",
@@ -250,7 +250,7 @@
         ]
       }
     },
-    "id": "G18"
+    "id": "G05"
   },
   {
     "type": "Geometry",
@@ -301,7 +301,7 @@
         ]
       }
     },
-    "id": "G19"
+    "id": "G06"
   },
   {
     "type": "Geometry",
@@ -358,7 +358,7 @@
         ]
       }
     },
-    "id": "G20"
+    "id": "G07"
   },
   {
     "type": "Geometry",
@@ -403,7 +403,7 @@
         ]
       }
     },
-    "id": "G21"
+    "id": "G08"
   },
   {
     "type": "Geometry",
@@ -482,7 +482,7 @@
         ]
       }
     },
-    "id": "G22"
+    "id": "G09"
   },
   {
     "type": "Geometry",
@@ -569,7 +569,7 @@
         ]
       }
     },
-    "id": "G23"
+    "id": "G10"
   },
   {
     "type": "Geometry",
@@ -648,7 +648,7 @@
         ]
       }
     },
-    "id": "G25"
+    "id": "G11"
   },
   {
     "type": "Geometry",
@@ -735,7 +735,7 @@
         ]
       }
     },
-    "id": "G26"
+    "id": "G12"
   },
   {
     "type": "Geometry",
@@ -796,7 +796,7 @@
       "type": "single",
       "key": "C"
     },
-    "id": "G27"
+    "id": "G13"
   },
   {
     "figure": {
@@ -844,7 +844,7 @@
       "type": "single",
       "key": "B"
     },
-    "id": "G28"
+    "id": "G14"
   },
   {
     "type": "Geometry",
@@ -891,7 +891,7 @@
       "type": "single",
       "key": "C"
     },
-    "id": "G31"
+    "id": "G15"
   },
   {
     "type": "Geometry",
@@ -962,7 +962,7 @@
       "type": "single",
       "key": "A"
     },
-    "id": "G33"
+    "id": "G16"
   },
   {
     "type": "Geometry",
@@ -1033,7 +1033,7 @@
         ]
       }
     },
-    "id": "G34"
+    "id": "G17"
   },
   {
     "type": "Geometry",
@@ -1121,7 +1121,7 @@
         ]
       }
     },
-    "id": "G35"
+    "id": "G18"
   },
   {
     "type": "Geometry",
@@ -1194,7 +1194,7 @@
         ]
       }
     },
-    "id": "G36"
+    "id": "G19"
   },
   {
     "type": "Geometry",
@@ -1282,157 +1282,7 @@
         ]
       }
     },
-    "id": "G37"
-  },
-  {
-    "type": "Geometry",
-    "stem": {
-      "en": "At least how many cubes are there in the figure?",
-      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "13"
-      },
-      {
-        "id": "B",
-        "en": "11"
-      },
-      {
-        "id": "C",
-        "en": "14"
-      },
-      {
-        "id": "D",
-        "en": "15"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "figure": {
-      "renderer": "isoCubes",
-      "params": {
-        "layout": [
-          [
-            [
-              1,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              0,
-              0
-            ]
-          ],
-          [
-            [
-              1,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              0,
-              0
-            ]
-          ],
-          [
-            [
-              1,
-              1
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              1,
-              1
-            ]
-          ]
-        ]
-      }
-    },
-    "id": "G38"
-  },
-  {
-    "type": "Geometry",
-    "stem": {
-      "en": "At least how many cubes are there in the figure?",
-      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "14"
-      },
-      {
-        "id": "B",
-        "en": "15"
-      },
-      {
-        "id": "C",
-        "en": "16"
-      },
-      {
-        "id": "D",
-        "en": "17"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "figure": {
-      "renderer": "isoCubes",
-      "params": {
-        "layout": [
-          [
-            [
-              1,
-              1,
-              1
-            ],
-            [
-              1,
-              1,
-              1
-            ],
-            [
-              1,
-              1,
-              1
-            ]
-          ],
-          [
-            [
-              1,
-              1,
-              1
-            ],
-            [
-              1,
-              1,
-              1
-            ],
-            [
-              0,
-              0,
-              0
-            ]
-          ]
-        ]
-      }
-    },
-    "id": "G39"
+    "id": "G20"
   },
   {
     "type": "Geometry",
@@ -1499,7 +1349,7 @@
       "type": "single",
       "key": "B"
     },
-    "id": "G40"
+    "id": "G21"
   },
   {
     "type": "Geometry",
@@ -1545,7 +1395,7 @@
       "type": "single",
       "key": "B"
     },
-    "id": "G41"
+    "id": "G22"
   },
   {
     "type": "Geometry",
@@ -1597,7 +1447,7 @@
       "type": "single",
       "key": "B"
     },
-    "id": "G42"
+    "id": "G23"
   },
   {
     "type": "Geometry",
@@ -1666,7 +1516,7 @@
       "type": "single",
       "key": "B"
     },
-    "id": "G43"
+    "id": "G24"
   },
   {
     "type": "Geometry",
@@ -1739,399 +1589,6 @@
       "type": "single",
       "key": "A"
     },
-    "id": "G44"
-  },
-  {
-    "type": "Geometry",
-    "figure": {
-      "renderer": "stackPattern",
-      "params": {
-        "stacks": [
-          [
-            "★",
-            "◆",
-            "■",
-            "▲",
-            "●"
-          ],
-          [
-            "▲",
-            "●",
-            "★",
-            "◆",
-            "■"
-          ],
-          [
-            "■",
-            "▲",
-            "●",
-            "★",
-            "◆"
-          ],
-          [
-            "◆",
-            "■",
-            "▲",
-            "●",
-            "★"
-          ]
-        ]
-      }
-    },
-    "stem": {
-      "en": "According to the pattern shown below, what is the shape at the top of the 7th figure?",
-      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 7?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "★"
-      },
-      {
-        "id": "B",
-        "en": "◆"
-      },
-      {
-        "id": "C",
-        "en": "■"
-      },
-      {
-        "id": "D",
-        "en": "▲"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "G45"
-  },
-  {
-    "type": "Geometry",
-    "figure": {
-      "renderer": "stackPattern",
-      "params": {
-        "stacks": [
-          [
-            "🌸",
-            "🌻",
-            "🌼",
-            "🌹",
-            "🥀",
-            "🌷"
-          ],
-          [
-            "🌼",
-            "🌹",
-            "🥀",
-            "🌷",
-            "🌸",
-            "🌻"
-          ],
-          [
-            "🥀",
-            "🌷",
-            "🌸",
-            "🌻",
-            "🌼",
-            "🌹"
-          ],
-          [
-            "🌸",
-            "🌻",
-            "🌼",
-            "🌹",
-            "🥀",
-            "🌷"
-          ]
-        ]
-      }
-    },
-    "stem": {
-      "en": "According to the pattern shown below, what is the shape at the top of the 5th figure?",
-      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 5?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "🌸"
-      },
-      {
-        "id": "B",
-        "en": "🌻"
-      },
-      {
-        "id": "C",
-        "en": "🌼"
-      },
-      {
-        "id": "D",
-        "en": "🌹"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "G46"
-  },
-  {
-    "type": "Geometry",
-    "figure": {
-      "renderer": "stackPattern",
-      "params": {
-        "stacks": [
-          [
-            "🚗",
-            "🚕",
-            "🚙",
-            "🚌",
-            "🚎"
-          ],
-          [
-            "🚌",
-            "🚎",
-            "🚗",
-            "🚕",
-            "🚙"
-          ],
-          [
-            "🚕",
-            "🚙",
-            "🚌",
-            "🚎",
-            "🚗"
-          ]
-        ]
-      }
-    },
-    "stem": {
-      "en": "According to the pattern shown below, what is the shape at the top of the 6th figure?",
-      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 6?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "🚗"
-      },
-      {
-        "id": "B",
-        "en": "🚕"
-      },
-      {
-        "id": "C",
-        "en": "🚙"
-      },
-      {
-        "id": "D",
-        "en": "🚌"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "G47"
-  },
-  {
-    "type": "Geometry",
-    "figure": {
-      "renderer": "stackPattern",
-      "params": {
-        "stacks": [
-          [
-            "🍉",
-            "🍓",
-            "🥝",
-            "🍍",
-            "🍑",
-            "🍒",
-            "🍋",
-            "🍏"
-          ],
-          [
-            "🍍",
-            "🍑",
-            "🍒",
-            "🍋",
-            "🍏",
-            "🍉",
-            "🍓",
-            "🥝"
-          ],
-          [
-            "🍒",
-            "🍋",
-            "🍏",
-            "🍉",
-            "🍓",
-            "🥝",
-            "🍍",
-            "🍑"
-          ],
-          [
-            "🍉",
-            "🍓",
-            "🥝",
-            "🍍",
-            "🍑",
-            "🍒",
-            "🍋",
-            "🍏"
-          ]
-        ]
-      }
-    },
-    "stem": {
-      "en": "According to the pattern shown below, what is the shape at the top of the 7th figure?",
-      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 7?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "🍉"
-      },
-      {
-        "id": "B",
-        "en": "🍓"
-      },
-      {
-        "id": "C",
-        "en": "🥝"
-      },
-      {
-        "id": "D",
-        "en": "🍍"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "G48"
-  },
-  {
-    "type": "Geometry",
-    "figure": {
-      "renderer": "stackPattern",
-      "params": {
-        "stacks": [
-          [
-            "⚽",
-            "🏀",
-            "🏈",
-            "🎾",
-            "🏐",
-            "🥎"
-          ],
-          [
-            "🏐",
-            "🥎",
-            "⚽",
-            "🏀",
-            "🏈",
-            "🎾"
-          ],
-          [
-            "⚽",
-            "🏀",
-            "🏈",
-            "🎾",
-            "🏐",
-            "🥎"
-          ],
-          [
-            "🏐",
-            "🥎",
-            "⚽",
-            "🏀",
-            "🏈",
-            "🎾"
-          ]
-        ]
-      }
-    },
-    "stem": {
-      "en": "According to the pattern shown below, what is the shape at the top of the 8th figure?",
-      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 8?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "⚽"
-      },
-      {
-        "id": "B",
-        "en": "🏀"
-      },
-      {
-        "id": "C",
-        "en": "🏈"
-      },
-      {
-        "id": "D",
-        "en": "🏐"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "G49"
-  },
-  {
-    "type": "Geometry",
-    "figure": {
-      "renderer": "stackPattern",
-      "params": {
-        "stacks": [
-          [
-            "◆",
-            "●",
-            "▲",
-            "■"
-          ],
-          [
-            "■",
-            "◆",
-            "●",
-            "▲"
-          ],
-          [
-            "▲",
-            "■",
-            "◆",
-            "●"
-          ]
-        ]
-      }
-    },
-    "stem": {
-      "en": "According to the pattern shown below, what is the shape at the top of the 4th figure?",
-      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 4?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "■"
-      },
-      {
-        "id": "B",
-        "en": "▲"
-      },
-      {
-        "id": "C",
-        "en": "●"
-      },
-      {
-        "id": "D",
-        "en": "◆"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "G50"
+    "id": "G25"
   }
 ]
