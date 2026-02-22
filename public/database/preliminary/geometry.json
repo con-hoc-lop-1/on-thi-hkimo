@@ -1590,5 +1590,780 @@
       "key": "A"
     },
     "id": "G25"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G26"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G27"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G28"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G29"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G30"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G31"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G32"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G33"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G34"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G35"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G36"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G37"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G38"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G39"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G40"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G41"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G42"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G43"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G44"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G45"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G46"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G47"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G48"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G49"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "empty",
+      "vi": "Rỗng"
+    },
+    "figure": {},
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G50"
   }
 ]
