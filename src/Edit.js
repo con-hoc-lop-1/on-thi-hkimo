@@ -99,7 +99,7 @@ function Edit({ dataType = "preliminary" }) {
         // Parse the newFigure string to JSON
         const figureObj =
           typeof newFigure === "string" ? JSON.parse(newFigure) : newFigure;
-        next[qIndex] = { ...q, figure: figureObj };
+        next[qIndex] = { ...q, figure: { ...figureObj } };
       } catch (e) {
         // If parsing fails, store as is
         next[qIndex] = { ...q, figure: newFigure };

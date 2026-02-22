@@ -112,7 +112,7 @@ function SvgIcon({ kind, size = 48, className = "" }) {
   }
 }
 // Q2/Q20: ma trận biểu tượng
-function SymbolPattern({ grid }) {
+function SymbolPattern({ grid = [] }) {
   const cols = grid?.[0]?.length || 0;
   return (
     <div className="border rounded p-3 bg-white">
@@ -123,8 +123,8 @@ function SymbolPattern({ grid }) {
           gap: 6,
         }}
       >
-        {grid.flatMap((row, i) =>
-          row.map((cell, j) => (
+        {(grid || []).flatMap((row, i) =>
+          (row || []).map((cell, j) => (
             <div
               key={`${i}-${j}`}
               className="d-flex align-items-center justify-content-center border rounded figure-item"
@@ -144,10 +144,10 @@ function SymbolPattern({ grid }) {
 }
 
 // Q5: nhóm lặp một symbol
-function GroupRepeats({ symbol, groups }) {
+function GroupRepeats({ symbol = "●", groups = [] }) {
   return (
     <div className="border rounded p-3 bg-white">
-      {groups.map((g, idx) => (
+      {(groups || []).map((g, idx) => (
         <div key={idx} className="d-flex align-items-center mb-2">
           <span className="text-muted me-2" style={{ width: 28 }}>
             #{idx + 1}
@@ -161,7 +161,7 @@ function GroupRepeats({ symbol, groups }) {
                 ?
               </div>
             ) : (
-              Array.from({ length: g }).map((_, k) => (
+              Array.from({ length: Number(g) || 0 }).map((_, k) => (
                 <SvgIcon key={k} kind={symbol} size={28} />
               ))
             )}
@@ -171,10 +171,10 @@ function GroupRepeats({ symbol, groups }) {
     </div>
   );
 }
-function GroupRepeatsGrid({ symbol, groups }) {
+function GroupRepeatsGrid({ symbol = "●", groups = [] }) {
   return (
     <div className="d-flex gap-3">
-      {groups.map((group, idx) => (
+      {(groups || []).map((group, idx) => (
         <div
           key={idx}
           className="border rounded p-2 bg-white d-flex flex-column align-items-center"
@@ -193,11 +193,11 @@ function GroupRepeatsGrid({ symbol, groups }) {
             <div
               className="d-grid"
               style={{
-                gridTemplateColumns: `repeat(${group.length}, 1fr)`,
+                gridTemplateColumns: `repeat(${(group || []).length || 1}, 1fr)`,
                 gap: 6,
               }}
             >
-              {group.flat().map((cell, i) => (
+              {(group || []).flat().map((cell, i) => (
                 <div
                   key={i}
                   className="border rounded d-flex align-items-center justify-content-center"
@@ -270,9 +270,9 @@ function IsoCubes({ layout = [], unit = 18 }) {
   const u = unit;
   const h = u; // chiều cao khối theo trục z
 
-  const depth = layout.length;
-  const rows = layout[0]?.length || 0;
-  const cols = layout[0]?.[0]?.length || 0;
+  const depth = (layout || []).length;
+  const rows = layout?.[0]?.length || 0;
+  const cols = layout?.[0]?.[0]?.length || 0;
 
   // bảng màu cho từng tầng
   const palette = [
@@ -286,9 +286,11 @@ function IsoCubes({ layout = [], unit = 18 }) {
 
   const items = [];
   for (let z = 0; z < depth; z++) {
+    const layer = layout[z] || [];
     for (let i = 0; i < rows; i++) {
+      const row = layer[i] || [];
       for (let j = 0; j < cols; j++) {
-        if (layout[z][i][j]) {
+        if (row[j]) {
           const cx = (j - i) * u;
           const cy = (j + i) * (u * 0.5) - z * h;
           items.push({ cx, cy, i, j, z });
@@ -302,6 +304,14 @@ function IsoCubes({ layout = [], unit = 18 }) {
     minY = Infinity,
     maxX = -Infinity,
     maxY = -Infinity;
+
+  if (items.length === 0) {
+    minX = 0;
+    minY = 0;
+    maxX = 100;
+    maxY = 100;
+  }
+
   items.forEach(({ cx, cy }) => {
     minX = Math.min(minX, cx - u);
     maxX = Math.max(maxX, cx + u);
@@ -309,8 +319,8 @@ function IsoCubes({ layout = [], unit = 18 }) {
     maxY = Math.max(maxY, cy + u / 2 + h);
   });
   const margin = 8;
-  const W = (maxX - minX || 0) + margin * 2;
-  const H = (maxY - minY || 0) + margin * 2;
+  const W = (maxX - minX || 100) + margin * 2;
+  const H = (maxY - minY || 100) + margin * 2;
 
   // vẽ 1 khối với màu dựa vào tầng z
   function Cube({ cx, cy, z }) {
@@ -336,7 +346,7 @@ function IsoCubes({ layout = [], unit = 18 }) {
 
   // hàm pha màu sáng/tối
   function shadeColor(color, percent) {
-    const num = parseInt(color.replace("#", ""), 16);
+    const num = parseInt((color || "#888").replace("#", ""), 16);
     let r = (num >> 16) + percent;
     let g = ((num >> 8) & 0x00ff) + percent;
     let b = (num & 0x0000ff) + percent;
@@ -376,10 +386,11 @@ function RegularPolygon({
   const pointsRef = useRef(null);
 
   if (!pointsRef.current) {
-    const step = (2 * Math.PI) / sides;
+    const s = Number(sides) || 3;
+    const step = (2 * Math.PI) / s;
     const pts = [];
 
-    for (let i = 0; i < sides; i++) {
+    for (let i = 0; i < s; i++) {
       const angle = -Math.PI / 2 + i * step;
       const rr = baseR * (0.3 + Math.random() * radiusJitter);
       let x = cx + rr * Math.cos(angle);
@@ -402,7 +413,7 @@ function RegularPolygon({
     pointsRef.current = pts;
   }
 
-  const points = pointsRef.current;
+  const points = pointsRef.current || [];
   const ptsStr = points.map((p) => `${p.x},${p.y}`).join(" ");
 
   return (
@@ -426,19 +437,21 @@ function RegularPolygon({
 }
 
 // Q19: chồng khối (hỏi phần tử trên cùng)
-function StackPattern({ stacks }) {
+function StackPattern({ stacks = [] }) {
   return (
     <div className="d-flex gap-3">
-      {stacks.map((stack, i) => (
+      {(stacks || []).map((stack, i) => (
         <div key={i} className="d-flex flex-column align-items-center">
           <div
             className="border rounded d-flex flex-column align-items-center justify-content-start p-2 gap-2"
             style={{ height: "auto", width: 112 }}
           >
-            {stack[0] === "?" ? (
+            {stack?.[0] === "?" ? (
               <span className="fs-3 mt-auto">?</span>
             ) : (
-              stack.map((s, k) => <SvgIcon key={k} kind={s} size={32} />)
+              (stack || []).map((s, k) => (
+                <SvgIcon key={k} kind={s} size={32} />
+              ))
             )}
           </div>
           <div className="mt-2 text-muted">Fig {i + 1}</div>
@@ -454,11 +467,17 @@ function ColumnAddition({
   plusIndex = null,
   fontSize = 28,
 }) {
+  const safeTerms = Array.isArray(terms) ? terms : [];
+  const safeResult = String(result || "");
   // Nếu không chỉ định, mặc định đặt dấu + trước hạng tử cuối
-  const pIndex = plusIndex == null ? terms.length - 1 : plusIndex;
+  const pIndex =
+    plusIndex == null ? Math.max(0, safeTerms.length - 1) : plusIndex;
 
   // Tính độ rộng cột lớn nhất để canh phải
-  const maxLen = Math.max(result.length, ...terms.map((t) => String(t).length));
+  const maxLen = Math.max(
+    safeResult.length,
+    ...safeTerms.map((t) => String(t).length)
+  );
   const padLeft = (s, n) => String(s).padStart(n, " ");
 
   const Row = ({ text, isPlus }) => (
@@ -492,7 +511,7 @@ function ColumnAddition({
   return (
     <div className="d-inline-block p-3">
       {/* Các hạng tử */}
-      {terms.map((t, i) => (
+      {safeTerms.map((t, i) => (
         <Row key={i} text={t} isPlus={i === pIndex} />
       ))}
 
@@ -511,7 +530,7 @@ function ColumnAddition({
       </div>
 
       {/* Kết quả */}
-      <Row text={result} isPlus={false} />
+      <Row text={safeResult} isPlus={false} />
     </div>
   );
 }
@@ -596,7 +615,7 @@ function GroupMatrices({ data = [] }) {
 function Balances({ balances = [] }) {
   return (
     <div className="d-flex flex-wrap gap-4 justify-content-center">
-      {balances.map((pair, idx) => (
+      {(balances || []).map((pair, idx) => (
         <div key={idx} className="d-flex flex-column align-items-center">
           {/* Thanh ngang cân */}
           <div
@@ -608,14 +627,14 @@ function Balances({ balances = [] }) {
             }}
           >
             <div className="d-flex gap-1">
-              {pair[0].map((item, i) => (
+              {(pair?.[0] || []).map((item, i) => (
                 <span key={i} style={{ fontSize: 24 }}>
                   {item}
                 </span>
               ))}
             </div>
             <div className="d-flex gap-1">
-              {pair[1].map((item, i) => (
+              {(pair?.[1] || []).map((item, i) => (
                 <span key={i} style={{ fontSize: 24 }}>
                   {item}
                 </span>
@@ -651,7 +670,7 @@ function SquareConnect({ data = [] }) {
 
   return (
     <div className="d-flex flex-wrap gap-4 justify-content-center">
-      {data.map((pair, idx) => (
+      {(data || []).map((pair, idx) => (
         <svg
           key={idx}
           width={120}
@@ -677,10 +696,10 @@ function SquareConnect({ data = [] }) {
           {/* vẽ đường nối */}
           {Array.isArray(pair) && pair.length === 2 ? (
             <line
-              x1={points[pair[0] - 1][0]}
-              y1={points[pair[0] - 1][1]}
-              x2={points[pair[1] - 1][0]}
-              y2={points[pair[1] - 1][1]}
+              x1={points[pair[0] - 1]?.[0] || 0}
+              y1={points[pair[0] - 1]?.[1] || 0}
+              x2={points[pair[1] - 1]?.[0] || 0}
+              y2={points[pair[1] - 1]?.[1] || 0}
               stroke="red"
               strokeWidth={2}
             />
@@ -701,9 +720,9 @@ function CharGrid({ data = [[]] }) {
       style={{ borderCollapse: "collapse" }}
     >
       <tbody>
-        {data.map((row, i) => (
+        {(data || []).map((row, i) => (
           <tr key={i}>
-            {row.map((cell, j) => (
+            {(row || []).map((cell, j) => (
               <td key={j} style={{ width: 28, height: 28, padding: 2 }}>
                 {cell || ""}
               </td>
@@ -719,19 +738,19 @@ function LineSegments({ points = [], segments = [] }) {
   return (
     <svg width={200} height={200} viewBox="0 0 100 100" className="mx-auto">
       {/* Vẽ đoạn thẳng */}
-      {segments.map(([a, b], idx) => (
+      {(segments || []).map(([a, b], idx) => (
         <line
           key={idx}
-          x1={points[a][0]}
-          y1={points[a][1]}
-          x2={points[b][0]}
-          y2={points[b][1]}
+          x1={points[a]?.[0] || 0}
+          y1={points[a]?.[1] || 0}
+          x2={points[b]?.[0] || 0}
+          y2={points[b]?.[1] || 0}
           stroke="black"
           strokeWidth={2}
         />
       ))}
       {/* Vẽ điểm */}
-      {points.map(([x, y], i) => (
+      {(points || []).map(([x, y], i) => (
         <circle key={i} cx={x} cy={y} r={3} fill="red">
           <title>{i}</title>
         </circle>
@@ -743,12 +762,12 @@ function LineSegments({ points = [], segments = [] }) {
 function MultiCircles({ circles = [] }) {
   return (
     <svg width={200} height={200} viewBox="0 0 200 200" className="mx-auto">
-      {circles.map((c, idx) => (
+      {(circles || []).map((c, idx) => (
         <circle
           key={idx}
-          cx={c.cx}
-          cy={c.cy}
-          r={c.r}
+          cx={c?.cx || 0}
+          cy={c?.cy || 0}
+          r={c?.r || 0}
           stroke="black"
           strokeWidth={2}
           fill="none"
@@ -758,7 +777,7 @@ function MultiCircles({ circles = [] }) {
   );
 }
 // Qxx: Chuỗi hạt (⚪⚫ hoặc emoji)
-function GeometryOverlapFigure({ shapes }) {
+function GeometryOverlapFigure({ shapes = [] }) {
   const shapeToSvg = {
     circle: <circle cx="0" cy="0" r="25" stroke="black" fill="none" />,
     square: (
@@ -778,22 +797,23 @@ function GeometryOverlapFigure({ shapes }) {
   };
 
   const spacing = 30; // khoảng cách để chồng lấn vừa phải
+  const safeShapes = Array.isArray(shapes) ? shapes : [];
 
   return (
     <svg
-      viewBox={`-20 -40 ${shapes.length * spacing + 60} 100`}
+      viewBox={`-20 -40 ${safeShapes.length * spacing + 60} 100`}
       width={300}
       height={120}
     >
-      {shapes.map((s, i) => (
+      {safeShapes.map((s, i) => (
         <g key={i} transform={`translate(${i * spacing}, 0)`}>
-          {shapeToSvg[s]}
+          {shapeToSvg[s] || null}
         </g>
       ))}
     </svg>
   );
 }
-function TextFigure({ content }) {
+function TextFigure({ content = "" }) {
   return (
     <div className="text-center">
       <p className="fs-3">{content}</p>
@@ -924,17 +944,28 @@ export function FigureEditor({ figure, onChange }) {
   // Use a ref to store the initial figure to avoid re-initializing state on every render
   const [localFigure, setLocalFigure] = useState(figure || {});
 
+  const initialFigure = useRef(figure || {});
+
   // Update local state when figure prop changes (e.g. after a save or switching questions)
   useEffect(() => {
     setLocalFigure(figure || {});
+    initialFigure.current = figure || {};
   }, [JSON.stringify(figure)]);
 
   const handleRendererChange = (e) => {
     const renderer = e.target.value;
-    const newFigure =
-      renderer === "NONE" ? {} : { renderer, params: localFigure.params || {} };
+    const newFigure = renderer === "NONE" ? {} : { renderer, params: {} };
     setLocalFigure(newFigure);
+    // Note: We don't call onChange here to avoid immediate re-render of the preview if it might be slow,
+    // but the user said "when changing renderer, clear old content to avoid error",
+    // and "restore should rollback to saved figure".
+    // If we want it to re-render immediately on renderer change, we keep onChange(newFigure).
     onChange(newFigure);
+  };
+
+  const handleRestore = () => {
+    setLocalFigure(initialFigure.current);
+    onChange(initialFigure.current);
   };
 
   const handleParamChange = (name, value, type) => {
@@ -958,17 +989,30 @@ export function FigureEditor({ figure, onChange }) {
       },
     };
     setLocalFigure(newFigure);
-    // Only call onChange if it's valid JSON for array types
-    if (type === "array") {
+  };
+
+  const handleBlur = (name, value, type) => {
+    let finalValue = value;
+    if (type === "number") {
+      finalValue = value === "" ? 0 : Number(value);
+    } else if (type === "array") {
       try {
-        JSON.parse(value);
-        onChange(newFigure);
+        finalValue = JSON.parse(value);
       } catch (e) {
-        // Don't sync yet
+        // If invalid JSON, we don't sync to parent
+        return;
       }
-    } else {
-      onChange(newFigure);
     }
+
+    const newFigure = {
+      ...localFigure,
+      params: {
+        ...(localFigure.params || {}),
+        [name]: finalValue,
+      },
+    };
+    setLocalFigure(newFigure);
+    onChange(newFigure);
   };
 
   const currentRenderer = localFigure.renderer || "NONE";
@@ -978,18 +1022,27 @@ export function FigureEditor({ figure, onChange }) {
     <div className="figure-editor border rounded p-2 bg-white">
       <div className="mb-2">
         <label className="form-label small fw-bold">Renderer</label>
-        <select
-          className="form-select form-select-sm"
-          value={currentRenderer}
-          onChange={handleRendererChange}
-        >
-          <option value="NONE">NONE</option>
-          {Object.keys(FIGURE_METADATA).map((key) => (
-            <option key={key} value={key}>
-              {key}
-            </option>
-          ))}
-        </select>
+        <div className="d-flex gap-1">
+          <select
+            className="form-select form-select-sm"
+            value={currentRenderer}
+            onChange={handleRendererChange}
+          >
+            <option value="NONE">NONE</option>
+            {Object.keys(FIGURE_METADATA).map((key) => (
+              <option key={key} value={key}>
+                {key}
+              </option>
+            ))}
+          </select>
+          <button
+            className="btn btn-sm btn-outline-secondary"
+            onClick={handleRestore}
+            title="Restore"
+          >
+            <i className="bi bi-arrow-counterclockwise"></i>
+          </button>
+        </div>
       </div>
 
       {metadata && (
@@ -1014,6 +1067,7 @@ export function FigureEditor({ figure, onChange }) {
                     onChange={(e) =>
                       handleParamChange(name, e.target.value, type)
                     }
+                    onBlur={(e) => handleBlur(name, e.target.value, type)}
                   />
                 ) : type === "number" ? (
                   <input
@@ -1023,6 +1077,7 @@ export function FigureEditor({ figure, onChange }) {
                     onChange={(e) =>
                       handleParamChange(name, e.target.value, type)
                     }
+                    onBlur={(e) => handleBlur(name, e.target.value, type)}
                   />
                 ) : (
                   <input
@@ -1032,6 +1087,7 @@ export function FigureEditor({ figure, onChange }) {
                     onChange={(e) =>
                       handleParamChange(name, e.target.value, type)
                     }
+                    onBlur={(e) => handleBlur(name, e.target.value, type)}
                   />
                 )}
               </div>
